@@ -1,0 +1,5267 @@
+<h2>Catalogus</h2>
+<p class="ednote" title="Over deze catalogus">
+   Deze catalogus is automatisch samengesteld op basis van het UML model 
+   "SampleBase" door Imvertor OS 1.25.4.20170707 op July 7, 2017 at 12:47:42.
+   <br>
+   Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i>arjan.loeffen at armatiek.nl</i> en geef de code 
+   <i>httpwww.bro.nlschemassample-2-20130318</i> door. 
+   Voor inhoudelijke fouten neem contact op met het modellenteam.
+   
+</p><a class="anchor" name=""></a><section>
+   <h1>Featuretypes </h1>
+   <a class="anchor" name="global_d11600e1405"></a><section>
+      <h2>FeatureType Bike</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Bike</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%">Bicycle</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">A human-powered, pedal-driven, single-track vehicle, having two wheels attached to
+                  a frame, one behind the other.
+               </td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Abstract object
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e1495">color</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e1608">netWeight</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e835">Weight</a>
+                  
+               </td>
+               <td width="10%">0 .. 1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e1718">status</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e1240">Status</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  
+                  <a class="link" href="#detail_d11600e5726">owner</a>
+                  
+                  :
+               </td>
+               <td width="50%">
+                  
+                  
+               </td>
+               <td width="10%"></td>
+               <td width="10%">
+                  1 .. *
+                  
+               </td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">- 
+                  <a class="link" href="#detail_d11600e5789">firstName</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">- 
+                  <a class="link" href="#detail_d11600e5890">lastName</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <div class="subheader">AssociationType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Association name</i></td>
+               <td><i>Definition</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="45%">
+                  Bike
+                  specializes
+                  
+                  <a class="link" href="#global_d11600e1937">BikeProps</a>
+                  
+                  
+               </td>
+               <td width="50%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   <a class="anchor" name="global_d11600e1937"></a><section>
+      <h2>FeatureType BikeProps</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">BikeProps</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%">LANG EN Bike properties
+                  LANG NL Fiets eigenschappen
+               </td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Abstract object
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e1994">id</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   <a class="anchor" name="global_d11600e2141"></a><section>
+      <h2>FeatureType Brick</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Brick</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%">Brick</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">Identifier or geographic name of a specific geographic area, location, or other spatial
+                  object which defines the scope of an address.
+               </td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%">20170101</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%">stockId</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%">All bricks</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Abstract object
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e2234">stockId</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1 .. 3</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e2351">color</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e2461">netWeight</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e835">Weight</a>
+                  
+               </td>
+               <td width="10%">0 .. 1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e2584">size</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e1034">BrickSize</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e2691">type</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e6125">ValueList</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e2802">corners</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  INTEGER
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e2912">description</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">0 .. 1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e3013">maxTemperature</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  REAL
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e3140">measure</a>
+                  
+               </td>
+               <td width="50%">Unit of measurement (line or surface)</td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e406">Goniometric</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e3296">inStock</a>
+                  
+               </td>
+               <td width="50%">Specifies if the Brick is available (in stock).</td>
+               <td width="10%">
+                  BOOLEAN
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e3422">geoLocation</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e7811">GM_Point</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e3542">tag</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e6040">ProductionTag</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e3649">citation</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e8352">CI_Citation</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <div class="subheader">AssociationType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Association name</i></td>
+               <td><i>Definition</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="45%">
+                  Brick
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d11600e3755">producedBy</a>
+                  
+                  
+                  <a class="link" href="#global_d11600e5298">Producer</a>
+                  
+                  [ 0 .. * ]
+                  
+               </td>
+               <td width="50%"></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="45%">
+                  Brick
+                  [ 0 .. * ]
+                  
+                  <a class="link" href="#detail_d11600e3873">baseOnDesign</a>
+                  
+                  
+                  <a class="link" href="#global_d11600e2141">Brick</a>
+                  
+                  [ 0 .. * ]
+                  
+               </td>
+               <td width="50%">Identifier or geographic name of a specific geographic area, location, or other spatial
+                  object which defines the scope of an address.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   <a class="anchor" name="global_d11600e4038"></a><section>
+      <h2>FeatureType Client</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Client</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%">LANG NL Notities mbt Client</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">LANG NL Notities mbt Client</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Abstract object
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e4122">id</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <div class="subheader">AssociationType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Association name</i></td>
+               <td><i>Definition</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="45%">
+                  Client
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d11600e4241">contract</a>
+                  
+                  
+                  <a class="link" href="#global_d11600e4400">Contract</a>
+                  
+                  [ 1 .. * ]
+                  
+               </td>
+               <td width="50%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <div class="subheader">Explanation</div>LANG NL Notities mbt Client
+      
+   </section>
+   <a class="anchor" name="global_d11600e4400"></a><section>
+      <h2>FeatureType Contract</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Contract</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Abstract object
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e4463">id</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   <a class="anchor" name="global_d11600e5090"></a><section>
+      <h2>FeatureType ExternalProducer</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">ExternalProducer</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Abstract object
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e5168">postarea</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e671">Postcode</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <div class="subheader">AssociationType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Association name</i></td>
+               <td><i>Definition</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="45%">
+                  ExternalProducer
+                  specializes
+                  
+                  <a class="link" href="#global_d11600e5298">Producer</a>
+                  
+                  
+               </td>
+               <td width="50%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   <a class="anchor" name="global_d11600e5298"></a><section>
+      <h2>FeatureType Producer</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Producer</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Abstract object
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e5361">id</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e5477">contractDate</a>
+                  
+               </td>
+               <td width="50%">Datum waarop het contract is afgesloten.</td>
+               <td width="10%">
+                  DATE
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e5603">site</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  URI
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   
+</section><a class="anchor" name=""></a><section>
+   <h1>Association classes </h1>
+   <a class="anchor" name="global_d11600e4601"></a><div>
+      <h2>AssociationClass Deal</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Deal</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e4664">SignedAt</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  DATETIME
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e4765">FestivityYear</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  YEAR
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e4866">FestivityMonth</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  MONTH
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e4967">FestivityDay</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  DAY
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </div>
+   
+</section><a class="anchor" name=""></a><section>
+   <h1>Referencelists </h1>
+   <a class="anchor" name="global_d11600e6125"></a><div>
+      <h2>Reference list ValueList</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">ValueList</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%">Sample name</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">Sample definition 1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Data location
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e6224">code</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e6272">value</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <div class="subheader">Explanation</div>Sample description
+      
+   </div>
+   
+</section><a class="anchor" name=""></a><section>
+   <h1>Codelists </h1>
+   <a class="anchor" name="global_d11600e6040"></a><div>
+      <h2>Codelist ProductionTag</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">ProductionTag</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Data location
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</section><a class="anchor" name=""></a><section>
+   <h1>Unions </h1>
+   <a class="anchor" name="global_d11600e406"></a><div>
+      <h2>Union Goniometric</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Goniometric</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">Notities mbt SampleApplicationBase/SampleSpecial::Goneometric</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e460">line</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e588">Line</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e514">surface</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  <a class="link" href="#global_d11600e753">Surface</a>
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </div>
+   
+</section><a class="anchor" name=""></a><section>
+   <h1>Primitive types </h1>
+   <a class="anchor" name="global_d11600e835"></a><div>
+      <h2>PrimitiveDatatype Weight</h2>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">Weight</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Alternative name
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">AttributeType overview</div>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td><i></i></td>
+               <td><i>Attribute name</i></td>
+               <td><i>Definition</i></td>
+               <td><i>Format/type</i></td>
+               <td><i>Mult</i></td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e898">amount</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  REAL
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+            <tr>
+               <td width="5%">&nbsp;</td>
+               <td width="25%">
+                  <a class="link" href="#detail_d11600e956">unit</a>
+                  
+               </td>
+               <td width="50%"></td>
+               <td width="10%">
+                  CHARACTERSTRING
+                  
+               </td>
+               <td width="10%">1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </div>
+   
+</section><a class="anchor" name=""></a><section>
+   <h1>Enumerations </h1>
+   
+   <table>
+      <tbody>
+         <tr>
+            <td width="30%"><b><a class="link" href="#detail_d11600e1034">BrickSize</a></b></td>
+            <td width="70%"></td>
+         </tr>
+         <tr>
+            <td width="30%"><b><a class="link" href="#detail_d11600e1240">Status</a></b></td>
+            <td width="70%"></td>
+         </tr>
+      </tbody>
+   </table>
+   
+</section>
+
+<a class="anchor" name="detail_d11600e1405"></a><div>
+   <h3>FeatureType Bike</h3>
+   <a class="anchor" name="detail_d11600e1495"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e1495">Bike</a> color
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">color</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e1608"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e1608">Bike</a> netWeight
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">netWeight</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">0 .. 1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">Weight</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e1718"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e1718">Bike</a> status
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">status</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">Status</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e5726"></a><div>
+      <h4>GroupType details <a href="#global_d11600e5726">Bike</a> BikerName
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">BikerName</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Identifier
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pupulation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication quality
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+         </tbody>
+      </table>
+      <a class="anchor" name="detail_d11600e5789"></a><div>
+         <h6>AttributeType firstName  BikerName</h6>
+         
+         <table>
+            <tbody>
+               <tr></tr>
+               <tr>
+                  <td width="30%"><b>
+                        Name
+                        </b></td>
+                  <td width="70%">firstName</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Origin
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Definition
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Origin of definition
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Date
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Voidable
+                        </b></td>
+                  <td width="70%">No</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication material history
+                        </b></td>
+                  <td width="70%">No</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication formal history
+                        </b></td>
+                  <td width="70%">No</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication under investigation
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication multiplicity
+                        </b></td>
+                  <td width="70%">1</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication authentic
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Rules
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Pattern
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Format
+                        </b></td>
+                  <td width="70%">CHARACTERSTRING</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </div>
+      <a class="anchor" name="detail_d11600e5890"></a><div>
+         <h6>AttributeType lastName  BikerName</h6>
+         
+         <table>
+            <tbody>
+               <tr></tr>
+               <tr>
+                  <td width="30%"><b>
+                        Name
+                        </b></td>
+                  <td width="70%">lastName</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Origin
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Definition
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Origin of definition
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Date
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Voidable
+                        </b></td>
+                  <td width="70%">No</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication material history
+                        </b></td>
+                  <td width="70%">No</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication formal history
+                        </b></td>
+                  <td width="70%">No</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication under investigation
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication multiplicity
+                        </b></td>
+                  <td width="70%">1</td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Indication authentic
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Rules
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Pattern
+                        </b></td>
+                  <td width="70%"></td>
+               </tr>
+               <tr>
+                  <td width="30%"><b>
+                        Format
+                        </b></td>
+                  <td width="70%">CHARACTERSTRING</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </div>
+      
+   </div>
+   
+</div>
+<a class="anchor" name="detail_d11600e1937"></a><div>
+   <h3>FeatureType BikeProps</h3>
+   <a class="anchor" name="detail_d11600e1994"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e1994">BikeProps</a> id
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+<a class="anchor" name="detail_d11600e2141"></a><div>
+   <h3>FeatureType Brick</h3>
+   <a class="anchor" name="detail_d11600e2234"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e2234">Brick</a> stockId
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">stockId</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1 .. 3</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e2351"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e2351">Brick</a> color
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">color</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e2461"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e2461">Brick</a> netWeight
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">netWeight</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">0 .. 1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">Weight</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e2584"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e2584">Brick</a> size
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">size</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">BrickSize</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e2691"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e2691">Brick</a> type
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">type</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">ValueList</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e2802"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e2802">Brick</a> corners
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">corners</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">INTEGER</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e2912"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e2912">Brick</a> description
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">description</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">0 .. 1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3013"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e3013">Brick</a> maxTemperature
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">maxTemperature</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">REAL</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3140"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e3140">Brick</a> measure
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">measure</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">Unit of measurement (line or surface)</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">Goniometric</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <div class="subheader">Explanation</div>Unit of measurement (line or surface)
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3296"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e3296">Brick</a> inStock
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">inStock</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">Specifies if the Brick is available (in stock).</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">BOOLEAN</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3422"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e3422">Brick</a> geoLocation
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">geoLocation</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">GM_Point</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3542"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e3542">Brick</a> tag
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">tag</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">ProductionTag</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3649"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e3649">Brick</a> citation
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">citation</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CI_Citation</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3755"></a><div>
+      <h4>AssociationType details <a href="#global_d11600e3755">Brick</a> producedBy
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">producedBy</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">0 .. *</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Associated objecttype
+                     </b></td>
+               <td width="70%">
+                  <a class="link" href="#global_d11600e5298">Producer</a>
+                  
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e3873"></a><div>
+      <h4>AssociationType details <a href="#global_d11600e3873">Brick</a> baseOnDesign
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">baseOnDesign</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">0 .. *</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Associated objecttype
+                     </b></td>
+               <td width="70%">
+                  <a class="link" href="#global_d11600e2141">Brick</a>
+                  
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+<a class="anchor" name="detail_d11600e4038"></a><div>
+   <h3>FeatureType Client</h3>
+   <a class="anchor" name="detail_d11600e4122"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e4122">Client</a> id
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e4241"></a><div>
+      <h4>AssociationType details <a href="#global_d11600e4241">Client</a> contract
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">contract</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1 .. *</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Associated objecttype
+                     </b></td>
+               <td width="70%">
+                  <a class="link" href="#global_d11600e4400">Contract</a>
+                  
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+<a class="anchor" name="detail_d11600e4400"></a><div>
+   <h3>FeatureType Contract</h3>
+   <a class="anchor" name="detail_d11600e4463"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e4463">Contract</a> id
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+<a class="anchor" name="detail_d11600e5090"></a><div>
+   <h3>FeatureType ExternalProducer</h3>
+   <a class="anchor" name="detail_d11600e5168"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e5168">ExternalProducer</a> postarea
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">postarea</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">Postcode</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+<a class="anchor" name="detail_d11600e5298"></a><div>
+   <h3>FeatureType Producer</h3>
+   <a class="anchor" name="detail_d11600e5361"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e5361">Producer</a> id
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">id</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e5477"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e5477">Producer</a> contractDate
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">contractDate</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%">Datum waarop het contract is afgesloten.</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">DATE</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e5603"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e5603">Producer</a> site
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">site</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">URI</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+
+
+<a class="anchor" name="detail_d11600e4601"></a><div>
+   <h3>AssociationClass Deal</h3>
+   <a class="anchor" name="detail_d11600e4664"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e4664">Deal</a> SignedAt
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">SignedAt</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">DATETIME</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e4765"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e4765">Deal</a> FestivityYear
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">FestivityYear</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">YEAR</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e4866"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e4866">Deal</a> FestivityMonth
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">FestivityMonth</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">MONTH</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e4967"></a><div>
+      <h4>AttributeType details <a href="#global_d11600e4967">Deal</a> FestivityDay
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">FestivityDay</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Voidable
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication material history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication formal history
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication under investigation
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication authentic
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Rules
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">DAY</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     May be derived
+                     </b></td>
+               <td width="70%">No</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+
+
+<a class="anchor" name="detail_d11600e6125"></a><div>
+   <h3>Reference list ValueList</h3>
+   <a class="anchor" name="detail_d11600e6224"></a><div>
+      <h4>Reference element details <a href="#global_d11600e6224">ValueList</a> code
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">code</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e6272"></a><div>
+      <h4>Reference element details <a href="#global_d11600e6272">ValueList</a> value
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">value</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+
+
+
+<a class="anchor" name="detail_d11600e406"></a><div>
+   <h3>Union Goniometric</h3>
+   <a class="anchor" name="detail_d11600e460"></a><div>
+      <h4>Union element details <a href="#global_d11600e460">Goniometric</a> line
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">line</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">Line</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e514"></a><div>
+      <h4>Union element details <a href="#global_d11600e514">Goniometric</a> surface
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">surface</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">Surface</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+
+
+<a class="anchor" name="detail_d11600e835"></a><div>
+   <h3>[TODO: STRUCTUREDDATATYPE] Weight</h3>
+   <a class="anchor" name="detail_d11600e898"></a><div>
+      <h4>Data element details <a href="#global_d11600e898">Weight</a> amount
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">amount</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">REAL</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   <a class="anchor" name="detail_d11600e956"></a><div>
+      <h4>Data element details <a href="#global_d11600e956">Weight</a> unit
+      </h4>
+      
+      <table>
+         <tbody>
+            <tr>
+               <td width="30%"><b>
+                     Name
+                     </b></td>
+               <td width="70%">unit</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Origin of definition
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Date
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Indication multiplicity
+                     </b></td>
+               <td width="70%">1</td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Pattern
+                     </b></td>
+               <td width="70%"></td>
+            </tr>
+            <tr>
+               <td width="30%"><b>
+                     Format
+                     </b></td>
+               <td width="70%">CHARACTERSTRING</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</div>
+
+
+<a class="anchor" name="detail_d11600e1034"></a><div>
+   <h3>Enumeration details <a href="#global_d11600e1034"></a> BrickSize
+   </h3>
+   
+   <table>
+      <tbody>
+         <tr>
+            <td width="40%"><b>Definition</b></td>
+            <td width="60%"></td>
+         </tr>
+      </tbody>
+   </table>
+   
+   <table>
+      <tbody>
+         <tr>
+            <td><i>Code</i></td>
+            <td><i>Name</i></td>
+            <td><i>Definition</i></td>
+         </tr>
+         <tr>
+            <td width="10%"></td>
+            <td width="30%">large</td>
+            <td width="60%"></td>
+         </tr>
+         <tr>
+            <td width="10%"></td>
+            <td width="30%">medium</td>
+            <td width="60%"></td>
+         </tr>
+         <tr>
+            <td width="10%"></td>
+            <td width="30%">small</td>
+            <td width="60%"></td>
+         </tr>
+      </tbody>
+   </table>
+   
+</div>
+<a class="anchor" name="detail_d11600e1240"></a><div>
+   <h3>Enumeration details <a href="#global_d11600e1240"></a> Status
+   </h3>
+   
+   <table>
+      <tbody>
+         <tr>
+            <td width="40%"><b>Definition</b></td>
+            <td width="60%"></td>
+         </tr>
+      </tbody>
+   </table>
+   
+   <table>
+      <tbody>
+         <tr>
+            <td><i>Code</i></td>
+            <td><i>Name</i></td>
+            <td><i>Definition</i></td>
+         </tr>
+         <tr>
+            <td width="10%"></td>
+            <td width="30%">in-progress</td>
+            <td width="60%"></td>
+         </tr>
+         <tr>
+            <td width="10%"></td>
+            <td width="30%">in-production</td>
+            <td width="60%"></td>
+         </tr>
+      </tbody>
+   </table>
+   
+</div>
+
