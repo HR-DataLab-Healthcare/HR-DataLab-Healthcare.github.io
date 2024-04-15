@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 25 380">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #e52821;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: ArialMT, Arial;
+        font-size: 20px;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="25" height="380"/>
+  <text class="cls-3" transform="translate(18.5 220) rotate(-90)"><tspan x="0" y="0">HR-DataLab Healthcare</tspan></text>
+  <rect class="cls-1" x="0" width="25" height="380"/>
+  <rect class="cls-1" x="0" y="15" width="25" height="365"/>
+</svg>
