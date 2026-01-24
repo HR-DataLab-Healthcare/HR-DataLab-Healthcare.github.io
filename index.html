@@ -265,127 +265,107 @@
     <p>xxx</p>
   </section>
 
-  <!-- 1.2 AI-Hub (WiLLMa) onboarding -->
-  <section id="willma-onboarding" class="section">
-    <h2 id="x1-2-willma-onboarding"><span class="secno">1.2 </span> AI-Hub (WiLLMa) onboarding</h2>
+<!-- 1.2 AI-Hub (WiLLMa) onboarding -->
+<h3 id="ai-hub-willma-onboarding"><span class="secno">1.2 </span>AI-Hub (WiLLMa) onboarding</h3>
+<p>
+  Deze sectie beschrijft de onboarding voor de AI-Hub (WiLLMa) pilot, gericht op developers en systeembeheerders.
+  De onboarding bestaat uit een manager-flow (SRAM/authorisatie) en een developer-flow (API key, model enablement,
+  integratie).
+</p>
 
-    <p>
-      Deze sectie beschrijft de onboarding voor de AI-Hub (WiLLMa) pilot, gericht op developers en systeembeheerders.
-      De onboarding bestaat uit een manager-flow (SRAM/authorisatie) en een developer-flow (API key, model enablement, integratie).
-    </p>
+<h4 id="willma-belangrijke-links">Belangrijke links</h4>
+<ul>
+  <li>AI-Hub backoffice: <a href="https://willma.surf.nl/">https://willma.surf.nl/</a></li>
+  <li>
+    AI-Hub user page (Element chat request):
+    <a href="https://willma.surf.nl/user">https://willma.surf.nl/user</a>
+  </li>
+  <li>AI-Hub API base URL: <a href="https://willma.surf.nl/api/v0">https://willma.surf.nl/api/v0</a></li>
+  <li>SRAM: <a href="https://sram.surf.nl">https://sram.surf.nl</a></li>
+</ul>
 
-    <h3 id="willma-links">Belangrijke links</h3>
-    <ul>
-      <li>AI-Hub backoffice: <a href="https://willma.surf.nl/">https://willma.surf.nl/</a></li>
-      <li>AI-Hub user page (Element chat request): <a href="https://willma.surf.nl/user">https://willma.surf.nl/user</a></li>
-      <li>AI-Hub API base URL: <code>https://willma.surf.nl/api/v0</code></li>
-      <li>SRAM: <a href="https://sram.surf.nl">https://sram.surf.nl</a></li>
-    </ul>
+<h4 id="onboarding-flows">Onboarding flows</h4>
+<p>Er zijn twee onboarding flows en <strong>beide moeten worden doorlopen</strong> om succesvol te verbinden met de AI-Hub.</p>
+<ul>
+  <li><strong>Managers (SRAM CO admins):</strong> authenticatie setup en collega’s uitnodigen.</li>
+  <li><strong>Developers:</strong> je applicatie koppelen aan de AI-Hub.</li>
+</ul>
 
-    <h3 id="willma-managers">Onboarding: Managers (SRAM CO admins)</h3>
-    <ol>
-      <li>Onderteken de pilot agreement zodra de use-case is geselecteerd.</li>
-      <li>Richt een SRAM Collaboration (CO) in en vraag toegang aan tot de “Willma Authentication Service”.</li>
-      <li>Vraag toegang aan tot de Element Group Chat via de SURF Service Desk (kopieer username en CO(s) via <a href="https://willma.surf.nl/user">willma.surf.nl/user</a>).</li>
-    </ol>
+<h4 id="onboarding-managers">Onboarding: Managers (SRAM CO admins)</h4>
 
-    <h4 id="willma-contacts">Contacten (pilot)</h4>
-    <table class="simple">
-      <thead>
-        <tr>
-          <th>Rol</th>
-          <th>Contact</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Product Manager</td>
-          <td>Paul Jansen — <a href="mailto:paul.jansen@surf.nl">paul.jansen@surf.nl</a></td>
-        </tr>
-        <tr>
-          <td>AI Advisor &amp; Lead Developer</td>
-          <td>Duncan Kampert — <a href="mailto:duncan.kampert@surf.nl">duncan.kampert@surf.nl</a></td>
-        </tr>
-        <tr>
-          <td>AI Advisor &amp; Developer</td>
-          <td>Julius Ceasar Aguma — <a href="mailto:ceasar.aguma@surf.nl">ceasar.aguma@surf.nl</a></td>
-        </tr>
-      </tbody>
-    </table>
+<h5 id="managers-step-1">Stap 1: Onderteken pilot agreement</h5>
+<ul>
+  <li>Onderteken de pilot agreement zodra de use-case is geselecteerd.</li>
+</ul>
 
-      <h3 id="services"><span class="secno">1.1 </span>Services</h3>
-      <p>xxx</p>
+<h5 id="managers-step-2">Stap 2: SRAM Collaboration (CO) en authorisatie</h5>
+<ul>
+  <li>
+    Richt een SRAM Collaboration (CO) in en vraag toegang aan tot de “Willma Authentication Service”.
+    (De AI-Hub gebruikt SRAM voor user authentication voordat API keys kunnen worden gegenereerd.)
+  </li>
+  <li>
+    SRAM: <a href="https://sram.surf.nl">https://sram.surf.nl</a> (bij login issues: <a href="mailto:sram-support@surf.nl">sram-support@surf.nl</a>)
+  </li>
+</ul>
 
-      <!-- 1.2 AI-Hub (WiLLMa) onboarding -->
-      <h3 id="ai-hub-willma-onboarding"><span class="secno">1.2 </span>AI-Hub (WiLLMa) onboarding</h3>
-      <p>
-        Deze sectie beschrijft de onboarding voor de AI-Hub (WiLLMa) pilot, gericht op developers en systeembeheerders.
-        De onboarding bestaat uit een manager-flow (SRAM/authorisatie) en een developer-flow (API key, model enablement,
-        integratie).
-      </p>
+<h5 id="managers-step-3">Stap 3: Element Group Chat</h5>
+<ul>
+  <li>
+    Vraag toegang aan tot de Element Group Chat via de SURF Service Desk (kopieer username en CO(s) via
+    <a href="https://willma.surf.nl/user">https://willma.surf.nl/user</a>).
+  </li>
+</ul>
 
-      <h4 id="willma-belangrijke-links">Belangrijke links</h4>
-      <ul>
-        <li>AI-Hub backoffice: <a href="https://willma.surf.nl/">https://willma.surf.nl/</a></li>
-        <li>
-          AI-Hub user page (Element chat request):
-          <a href="https://willma.surf.nl/user">https://willma.surf.nl/user</a>
-        </li>
-        <li>AI-Hub API base URL: <a href="https://willma.surf.nl/api/v0">https://willma.surf.nl/api/v0</a></li>
-        <li>SRAM: <a href="https://sram.surf.nl">https://sram.surf.nl</a></li>
-      </ul>
+<h4 id="contacten-pilot">Contacten (pilot)</h4>
+<table class="simple">
+  <thead>
+    <tr>
+      <th>Rol</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product Manager</td>
+      <td>Paul Jansen — <a href="mailto:paul.jansen@surf.nl">paul.jansen@surf.nl</a></td>
+    </tr>
+    <tr>
+      <td>AI Advisor &amp; Lead Developer</td>
+      <td>Duncan Kampert — <a href="mailto:duncan.kampert@surf.nl">duncan.kampert@surf.nl</a></td>
+    </tr>
+    <tr>
+      <td>AI Advisor &amp; Developer</td>
+      <td>Julius Ceasar Aguma — <a href="mailto:ceasar.aguma@surf.nl">ceasar.aguma@surf.nl</a></td>
+    </tr>
+  </tbody>
+</table>
 
-      <h4 id="onboarding-managers">Onboarding: Managers (SRAM CO admins)</h4>
-      <ul>
-        <li>Onderteken de pilot agreement zodra de use-case is geselecteerd.</li>
-        <li>Richt een SRAM Collaboration (CO) in en vraag toegang aan tot de “Willma Authentication Service”.</li>
-        <li>
-          Vraag toegang aan tot de Element Group Chat via de SURF Service Desk (kopieer username en CO(s) via
-          <a href="https://willma.surf.nl/user">willma.surf.nl/user</a>).
-        </li>
-      </ul>
+<h4 id="onboarding-developers">Onboarding: Developers</h4>
 
-      <h4 id="contacten-pilot">Contacten (pilot)</h4>
-      <table class="simple">
-        <thead>
-          <tr>
-            <th>Rol</th>
-            <th>Contact</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Manager</td>
-            <td>Paul Jansen — <a href="mailto:paul.jansen@surf.nl">paul.jansen@surf.nl</a></td>
-          </tr>
-          <tr>
-            <td>AI Advisor &amp; Lead Developer</td>
-            <td>Duncan Kampert — <a href="mailto:duncan.kampert@surf.nl">duncan.kampert@surf.nl</a></td>
-          </tr>
-          <tr>
-            <td>AI Advisor &amp; Developer</td>
-            <td>Julius Ceasar Aguma — <a href="mailto:ceasar.aguma@surf.nl">ceasar.aguma@surf.nl</a></td>
-          </tr>
-        </tbody>
-      </table>
+<h5 id="developers-step-1">Stap 1: API key aanmaken</h5>
+<ul>
+  <li>
+    Log in op de AI-Hub Back Office via <a href="https://willma.surf.nl/">https://willma.surf.nl/</a>
+    en maak een API key aan.
+  </li>
+</ul>
 
-      <h4 id="onboarding-developers">Onboarding: Developers</h4>
-      <ul>
-        <li>
-          Log in op de AI-Hub Back Office via <a href="https://willma.surf.nl/">willma.surf.nl</a> en maak een API key aan.
-        </li>
-        <li>
-          Laat modellen beschikbaar maken voor je CO (via de SRAM groep “Willma Model Administrator” en de backoffice
-          “enable models”).
-        </li>
-        <li>
-          Integreer de API in je code of tooling met base URL
-          <a href="https://willma.surf.nl/api/v0">https://willma.surf.nl/api/v0</a>.
-        </li>
-      </ul>
+<h5 id="developers-step-2">Stap 2: Modellen beschikbaar maken</h5>
+<ul>
+  <li>
+    Laat modellen beschikbaar maken voor je CO (via de SRAM groep “Willma Model Administrator” en de backoffice
+    “enable models”).
+  </li>
+</ul>
 
-      <h4 id="python-voorbeeld-modellen">Python voorbeeld: beschikbare modellen</h4>
-      <pre><code class="language-python">import requests
+<h5 id="developers-step-3">Stap 3: Integreer de API</h5>
+<ul>
+  <li>Integreer de API in je code of tooling met base URL <a href="https://willma.surf.nl/api/v0">https://willma.surf.nl/api/v0</a>.</li>
+</ul>
+
+<h4 id="python-voorbeeld-modellen">Python voorbeeld: beschikbare modellen</h4>
+<pre><code class="language-python">import requests
 
 api_key = "77696c6c6d61-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 headers = {"X-API-KEY": api_key, "Content-Type": "application/json"}
@@ -395,23 +375,12 @@ models = requests.get(f"{willma_base_url}/models", headers=headers).json()
 print("Available models:", models)
 </code></pre>
 
-      <h4 id="support-willma">Support</h4>
-      <p>
-        Bij issues (API key errors, modellen niet beschikbaar, service outages) graag een Service Desk ticket aanmaken
-        volgens de pilot/FAQ instructies.
-      </p>
+<h4 id="support-willma">Support</h4>
+<p>
+  Bij issues (API key errors, modellen niet beschikbaar, service outages) graag een Service Desk ticket aanmaken volgens
+  de pilot/FAQ instructies.
+</p>
 
-
-    <h4 id="willma-python">Python voorbeeld: beschikbare modellen</h4>
-    <pre><code class="language-python">import requests
-
-api_key = "77696c6c6d61-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
-headers = {"X-API-KEY": api_key, "Content-Type": "application/json"}
-willma_base_url = "https://willma.surf.nl/api/v0"
-
-models = requests.get(f"{willma_base_url}/models", headers=headers).json()
-print("Available models:", models)
-</code></pre>
 
 
 
