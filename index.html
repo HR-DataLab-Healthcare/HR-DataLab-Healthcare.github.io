@@ -128,7 +128,8 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
     }
     .content-col{ min-width: 0; }
     @media (max-width: 980px){
-      .page-wrap{ grid-template-columns: 1fr; }
+      .page-wrap{ grid-template-columns: 240px 1fr; /* TOC smaller => content breder */
+      gap: 18px; }
       nav#toc{ position: relative; top:auto; max-height: none; }
     }
   </style>
