@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataLab — wat is het en wat mag je verwachten?</title>
+  <meta name="description" content="Indexpagina met TOC naast de content op basis van WAAROM_EEN_DATALAB_JAN_2026_V07.docx." />
+
+  <style>
+    :root{
+      --fg:#0f172a;
+      --muted:#475569;
+      --bg:#ffffff;
+      --card:#f8fafc;
+      --border:#e2e8f0;
+      --link:#0b57d0;
+      --max: 1200px;
+
+      --toc-w: 320px;
+      --gap: 20px;
+    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;
+      line-height:1.55;
+      color:var(--fg);
+      background:var(--bg);
+    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    header{
+      padding:2.25rem 1rem 1.25rem;
+      border-bottom:1px solid var(--border);
+      background: linear-gradient(180deg, #f8fafc, transparent);
+    }
+    header .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    h1{ font-size:1.9rem; line-height:1.2; margin:0 0 .5rem; }
+    .lede{ color: var(--muted); max-width: 95ch; margin: .25rem 0 0; }
+    .meta{ color: var(--muted); font-size: .95rem; margin-top: .6rem; }
+
+    /* Layout: TOC left, content right */
+    .layout{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.25rem 1rem 3rem;
+      display:grid;
+      grid-template-columns: var(--toc-w) 1fr;
+      gap: var(--gap);
+      align-items:start;
+    }
+
+    nav.toc{
+      position: sticky;
+      top: 12px;
+      max-height: calc(100vh - 24px);
+      overflow:auto;
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:1rem 1rem .75rem;
+    }
+    nav.toc h2{ margin:0 0 .5rem; font-size:1.1rem; }
+    nav.toc .hint{ color:var(--muted); font-size:.92rem; margin:.25rem 0 .75rem; }
+    nav.toc ol{ margin:.25rem 0 .75rem; padding-left: 1.1rem; }
+    nav.toc li{ margin:.18rem 0; }
+    nav.toc a{ display:inline-block; padding:.08rem 0; }
+
+    main.content{
+      min-width: 0;
+    }
+
+    h2{ font-size:1.25rem; margin:2rem 0 .5rem; }
+    h3{ font-size:1.05rem; margin:1.25rem 0 .25rem; }
+    p{ margin:.25rem 0 .75rem; }
+    ul,ol{ margin:.25rem 0 .9rem; padding-left: 1.2rem; }
+    li{ margin:.25rem 0; }
+    code{ font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
+
+    .table-wrap{ overflow:auto; border:1px solid var(--border); border-radius:12px; }
+    table{ width:100%; border-collapse:collapse; min-width: 780px; }
+    th, td{ padding:.6rem .75rem; border-bottom:1px solid var(--border); vertical-align:top; }
+    th{ text-align:left; background:#f1f5f9; font-weight:600; }
+    tr:last-child td{ border-bottom:none; }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding:1.25rem 1rem;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    footer .wrap{ max-width: var(--max); margin: 0 auto; }
+
+    /* Mobile: stack TOC above content */
+    @media (max-width: 980px){
+      :root{ --toc-w: 1fr; }
+      .layout{ grid-template-columns: 1fr; }
+      nav.toc{ position: relative; top:auto; max-height:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>DataLab — wat is het en wat mag je verwachten?</h1>
+      <p class="lede">
+        Deze pagina is uitsluitend opgebouwd uit de inhoud van <code>WAAROM_EEN_DATALAB_JAN_2026_V07.docx</code>. [file:3]
+      </p>
+      <p class="meta">Versie: jan 2026 (V07). [file:3]</p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Inhoudsopgave">
+      <h2 id="inhoudsopgave">Inhoudsopgave</h2>
+      <p class="hint">Links is sticky op desktop; op mobiel komt de inhoudsopgave boven de content te staan. [file:3]</p>
+
+      <ol>
+        <li><a href="#doel-en-positie">Doel en positie binnen de Hogeschool Rotterdam</a></li>
+        <li><a href="#wanneer-betrek-je-het-datalab">Wanneer betrek je het DataLab?</a></li>
+        <li><a href="#wat-levert-het-datalab-per-fase">Wat levert het DataLab per onderzoeksfase?</a></li>
+
+        <li><a href="#infrastructuur">Infrastructuur</a>
+          <ol>
+            <li><a href="#poc-en-prototyping">Proof-of-concept en prototyping</a></li>
+            <li><a href="#voorbereiding-op-surf">Voorbereiding op researchdiensten (SURF)</a></li>
+            <li><a href="#beveiligde-samenwerking-tre">Beveiligde samenwerking (TRE)</a></li>
+          </ol>
+        </li>
+
+        <li><a href="#hoe-werkt-een-datalab">Hoe werkt een DataLab (werkwijze en "DS-stack")?</a>
+          <ol>
+            <li><a href="#digitale-workspace">Digitale workspace als basis</a></li>
+            <li><a href="#ds-stack">De DS-stack: lagen met elk een eigen verantwoordelijkheid</a></li>
+          </ol>
+        </li>
+
+        <li><a href="#wat-kun-je-praktisch-verwachten">Wat kun je praktisch verwachten (in het kort)</a></li>
+
+        <li><a href="#datalab-worksheet">DataLab WORKSHEET</a>
+          <ol>
+            <li><a href="#wat-doen-we-en-wat-niet">Wat doen we (en wat niet)?</a></li>
+            <li><a href="#wanneer-schakel-je-in">Wanneer schakel je het DataLab in?</a></li>
+            <li><a href="#wat-per-fase-verwachten">Wat kun je per fase verwachten?</a></li>
+            <li><a href="#welke-omgevingen-en-diensten">Welke omgevingen en diensten kunnen een rol spelen?</a></li>
+            <li><a href="#zo-vraag-je-ondersteuning-aan">Zo vraag je ondersteuning aan (minimale input)</a></li>
+            <li><a href="#uitkomst-van-de-intake">Uitkomst van de intake</a></li>
+          </ol>
+        </li>
+
+        <li><a href="#worksheet-bijlagen">WORKSHEET BIJLAGES</a>
+          <ol>
+            <li><a href="#bijlage-a-ds-stack">A. De "DS-stack" in het kort</a></li>
+            <li><a href="#bijlage-b-inzetscenarios">B. Typische inzetscenario's (keuzehulp)</a></li>
+            <li><a href="#bijlage-c-doorverwijzing">C. Doorverwijzing: wanneer en naar wie?</a></li>
+            <li><a href="#bijlage-d-standaard-output">D. Standaard output (documentatie) die het DataLab helpt realiseren</a></li>
+          </ol>
+        </li>
+
+        <li><a href="#addendum-privacy">Addendum: HR privacy (HINT) + Privacy-informatiepunt</a>
+          <ol>
+            <li><a href="#privacy-informatiepunt">Privacy-informatiepunt (PIP)</a></li>
+            <li><a href="#welke-applicaties-zijn-veilig">Welke applicaties zijn veilig binnen de hogeschool?</a></li>
+          </ol>
+        </li>
+      </ol>
+    </nav>
+
+    <main class="content">
+      <section id="doel-en-positie">
+        <h2>Doel en positie binnen de Hogeschool Rotterdam</h2>
+        <p>
+          Het KCZI DataLab ondersteunt onderzoekers en docenten bij methodologische en datagerelateerde vraagstukken, wanneer dit aantoonbaar bijdraagt aan kwaliteit, uitvoerbaarheid en verantwoording van praktijkgericht onderzoek. [file:3]
+        </p>
+        <p>
+          Het DataLab is geen alles-in-één uitvoeringsloket, maar fungeert als eerste aanspreekpunt (triage) en doorverwijzer. [file:3]
+        </p>
+        <ul>
+          <li><strong>Directe ondersteuning</strong>: bij scherpe onderzoeksvraag/doel/uitkomst en concrete methodologische of data-/softwarevragen. [file:3]</li>
+          <li><strong>Gerichte doorverwijzing</strong>: wanneer specialistische expertise of formele afstemming/besluitvorming nodig is (o.a. methodoloog/statisticus, datasteward/RDM, ICT/IDT, privacy/security, domeinexpertise of externe partijen). [file:3]</li>
+        </ul>
+      </section>
+
+      <section id="wanneer-betrek-je-het-datalab">
+        <h2>Wanneer betrek je het DataLab?</h2>
+        <p>
+          Bij voorkeur vroeg: in de voorfase (bijv. vóór subsidieaanvraag of vóórdat dataverzameling start). [file:3]
+        </p>
+        <p>
+          Vroege betrokkenheid helpt keuzes rond opzet, dataverzameling, analyse en data-/softwaremanagement tijdig te concretiseren en vast te leggen in o.a. onderzoeksprotocol, analyseplan, DMP en SMP. [file:3]
+        </p>
+        <p>
+          Dit sluit aan bij KCZI-werkwijze: systematisch werken per fase, toetsing/kwaliteitsborging en expliciete afspraken over datamanagement. [file:3]
+        </p>
+      </section>
+
+      <section id="wat-levert-het-datalab-per-fase">
+        <h2>Wat levert het DataLab per onderzoeksfase?</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Onderzoeksfase</th>
+                <th>Typische vraag</th>
+                <th>Wat levert het DataLab?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Voorfase (opzet)</strong></td>
+                <td>Keuze onderzoeksdesign, meetinstrumenten, steekproef, haalbaarheid, valorisatie</td>
+                <td>Intake; aanscherpen van onderzoeksvragen; meedenken over methodologische opties; zo nodig doorverwijzing naar (senior) methodologische/statistische expertise. [file:3]</td>
+              </tr>
+              <tr>
+                <td><strong>Verkenning / proof-of-concept (PoC)</strong></td>
+                <td>"Kunnen we de data-pipeline testen vóór we cloud inzetten?"</td>
+                <td>DS-tools en (waar beschikbaar) HPC; ondersteuning bij pipeline-ontwerp en testopzet; voorbereiding op passende inzet van SURF-diensten. [file:3]</td>
+              </tr>
+              <tr>
+                <td><strong>Dataverzameling</strong></td>
+                <td>Datastromen, datakwaliteit, workflow</td>
+                <td>Advies en praktische inrichting (workflow, kwaliteitscontroles, logging); zo nodig doorverwijzing naar tooling/training of domeinexpertise. [file:3]</td>
+              </tr>
+              <tr>
+                <td><strong>Data-analyse</strong></td>
+                <td>Opschonen, analysekeuzes, reproduceerbaarheid</td>
+                <td>Ondersteuning bij analyse-workflow, versiebeheer en documentatie; zo nodig doorverwijzing naar specialistische analyse-expertise. [file:3]</td>
+              </tr>
+              <tr>
+                <td><strong>Datamanagement (DMP)</strong></td>
+                <td>DMP, veilige opslag/delen, archivering, publiceren</td>
+                <td>Afstemming en ondersteuning bij DMP, opslag (o.a. HR Research Drive), projectmap-structuur, archivering en publicatie/metadata; zo nodig doorverwijzing naar datasteward/RDM-support. [file:3]</td>
+              </tr>
+              <tr>
+                <td><strong>Softwaremanagement (SMP)</strong></td>
+                <td>Toolkeuze, versies, licenties, overdraagbaarheid, reproduceerbaarheid</td>
+                <td>Advies over softwarekeuze en -beheer (versies/updates, licencies, documentatie, toegang/overdracht); koppeling aan reproduceerbare werkwijzen en gekozen (lokale/cloud) omgeving; zo nodig doorverwijzing naar IDT/ICT of gespecialiseerde DS-engineering. [file:3]</td>
+              </tr>
+              <tr>
+                <td><strong>Rapportage &amp; overdracht</strong></td>
+                <td>Navolgbaarheid, kwaliteitscontrole, overdraagbaarheid</td>
+                <td>Advies over vastlegging (audit trail, reconstructie), kwaliteitscriteria en overdrachtsmomenten conform KCZI. [file:3]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="infrastructuur">
+        <h2>Infrastructuur</h2>
+
+        <section id="poc-en-prototyping">
+          <h3>Proof-of-concept en prototyping</h3>
+          <p>
+            In de verkennende fase kan het DataLab faciliteiten bieden om een eerste data-pipeline te ontwerpen, prototypen en testen vóór opschaling of integratie (bij data-intensieve en/of rekenintensieve projecten). [file:3]
+          </p>
+          <ul>
+            <li>Data Science tools. [file:3]</li>
+            <li>(Waar beschikbaar) HPC-workstations. [file:3]</li>
+          </ul>
+        </section>
+
+        <section id="voorbereiding-op-surf">
+          <h3>Voorbereiding op researchdiensten (SURF)</h3>
+          <p>
+            Door randvoorwaarden vooraf uit te werken, kan inzet van cloud- en researchdiensten doelgericht en efficiënt plaatsvinden. [file:3]
+          </p>
+          <ul>
+            <li>SURF Research Drive (duurzame opslag en archivering, maakt federatief werken mogelijk). [file:3]</li>
+            <li>SURF Research Access Management (SRAM) (toegangsbeheer/toegangsportaal). [file:3]</li>
+            <li>SURF Research Cloud (SRC) (schaalbare onderzoeksomgevingen). [file:3]</li>
+          </ul>
+        </section>
+
+        <section id="beveiligde-samenwerking-tre">
+          <h3>Beveiligde samenwerking (TRE)</h3>
+          <p>
+            Waar nodig kan het DataLab (mee)werken in een Trusted Research Environment (TRE) om samenwerking te faciliteren, met aandacht voor privacy, informatiebeveiliging, toegangscontrole en auditability. [file:3]
+          </p>
+        </section>
+      </section>
+
+      <section id="hoe-werkt-een-datalab">
+        <h2>Hoe werkt een DataLab (werkwijze en "DS-stack")?</h2>
+
+        <section id="digitale-workspace">
+          <h3>Digitale workspace als basis</h3>
+          <p>
+            Om met data te werken is een digitale workspace nodig: een samenhangende set van infrastructuur en software waarmee data veilig kan worden opgeslagen, verwerkt, geanalyseerd en gedeeld. [file:3]
+          </p>
+        </section>
+
+        <section id="ds-stack">
+          <h3>De DS-stack: lagen met elk een eigen verantwoordelijkheid</h3>
+          <p>
+            De DS-stack is een lagenmodel op basis van separation of concerns (SoC): verantwoordelijkheden worden gescheiden om keuzes beheersbaar, overdraagbaar en reproduceerbaar te maken. [file:3]
+          </p>
+          <ol>
+            <li><strong>Infrastructuur laag (compute &amp; storage)</strong>: rekenvermogen (lokaal/HPC/cloud), opslag, back-up, netwerk. [file:3]</li>
+            <li><strong>Toegang &amp; beveiliging</strong>: accounts, rollen/rechten (bijv. SRAM), logging, dataclassificatie, veilige werkplek/TRE. [file:3]</li>
+            <li><strong>Data-laag</strong>: databronnen, data-inname, datakwaliteit, versiebeheer van datasets, metadata. [file:3]</li>
+            <li><strong>Verwerkings- en pipeline-laag</strong>: ETL/ELT, scripts/workflows, workflow management, reproduceerbare runs. [file:3]</li>
+            <li><strong>Analyse- en modelleerlaag</strong>: feature engineering, statistiek/ML, evaluatie, validatie. [file:3]</li>
+            <li><strong>Presentatie &amp; overdracht</strong>: rapportage, dashboards/outputs, documentatie, audit trail, overdraagbaarheid. [file:3]</li>
+          </ol>
+          <p>
+            Het DataLab helpt om keuzes per laag zichtbaar te maken en vast te leggen (protocol/analyseplan/DMP/SMP), zodat onderzoek navolgbaar, veilig en reproduceerbaar is. [file:3]
+          </p>
+        </section>
+      </section>
+
+      <section id="wat-kun-je-praktisch-verwachten">
+        <h2>Wat kun je praktisch verwachten (in het kort)</h2>
+        <ul>
+          <li>Intake en vraagverheldering: scope, doel, randvoorwaarden, planning, risico's. [file:3]</li>
+          <li>Concrete adviezen en inrichting: keuzes voor pipeline, tools, workflow, documentatie. [file:3]</li>
+          <li>Prototyping/PoC-ondersteuning: testen vóór opschaling naar cloud of integratie. [file:3]</li>
+          <li>Koppeling aan KCZI-kwaliteitseisen: checklist, vastlegging, evaluatiemomenten. [file:3]</li>
+          <li>Doorverwijzing en afstemming: als formele toetsing of specialistische expertise nodig is. [file:3]</li>
+        </ul>
+      </section>
+
+      <section id="datalab-worksheet">
+        <h2>DataLab WORKSHEET</h2>
+
+        <p>
+          Een DataLab is het eerste aanspreekpunt voor methodologische en data gerelateerde ondersteuning wanneer dit aantoonbaar bijdraagt aan kwaliteit, uitvoerbaarheid en verantwoording van praktijkgericht onderzoek. [file:3]
+        </p>
+
+        <section id="wat-doen-we-en-wat-niet">
+          <h3>Wat doen we (en wat niet)?</h3>
+
+          <p><strong>Het DataLab doet:</strong> [file:3]</p>
+          <ul>
+            <li>Intake &amp; vraagverheldering (scope, randvoorwaarden, risico's, planning). [file:3]</li>
+            <li>Methodologisch en data-/softwaregericht meedenken (opzet, datastromen, analyse-workflow, reproduceerbaarheid). [file:3]</li>
+            <li>Praktische ondersteuning bij pipeline-ontwerp en prototyping (waar passend). [file:3]</li>
+            <li>Advies en afstemming rond DMP/SMP, veilige opslag/delen en overdraagbaarheid. [file:3]</li>
+            <li>Doorverwijzen en coördineren richting juiste expertise (intern/extern) wanneer nodig. [file:3]</li>
+          </ul>
+
+          <p><strong>Het DataLab doet niet (standaard):</strong> [file:3]</p>
+          <ul>
+            <li>Structureel uitvoerend onderzoek overnemen (volledige analyse, langdurige dataverwerking). [file:3]</li>
+            <li>Formele goedkeuringen verstrekken (bijv. privacy/security-toetsing); wél begeleiden naar de juiste route. [file:3]</li>
+            <li>Maatwerk softwareontwikkeling zonder afstemming/mandaat (dan doorverwijzen of helpen specificeren). [file:3]</li>
+          </ul>
+        </section>
+
+        <section id="wanneer-schakel-je-in">
+          <h3>Wanneer schakel je het DataLab in?</h3>
+          <p>
+            Bij voorkeur vroeg, in de voorfase (bijv. vóór een subsidieaanvraag of vóórdat dataverzameling start), zodat ontwerpkeuzes tijdig kunnen worden vastgelegd in onderzoeksprotocol, analyseplan, DMP en SMP. [file:3]
+          </p>
+        </section>
+
+        <section id="wat-per-fase-verwachten">
+          <h3>Wat kun je per fase verwachten?</h3>
+          <ul>
+            <li>Voorfase (opzet): intake, aanscherpen onderzoeksvraag/doel, methodologische opties, haalbaarheid/steekproef, valorisatie; zo nodig doorverwijzing naar senior methodoloog/statisticus. [file:3]</li>
+            <li>Verkenning/Proof-of-concept: tooling en (waar beschikbaar) HPC-workstations; pipeline-ontwerp en testopzet; voorbereiding op SURF-diensten. [file:3]</li>
+            <li>Dataverzameling: advies over datastromen, datakwaliteit, workflow en logging; zo nodig doorverwijzing naar tooling/training/domeinexpertise. [file:3]</li>
+            <li>Analyse: ondersteuning bij reproduceerbare analyse-workflow, versiebeheer en documentatie; zo nodig specialistische analyse-expertise. [file:3]</li>
+            <li>Datamanagement (DMP): veilige opslag/delen, map-structuur, archivering en publiceren; afstemming met datasteward/RDM-support. [file:3]</li>
+            <li>Softwaremanagement (SMP): toolkeuze, versies, licenties, overdraagbaarheid; afstemming met ICT/IDT waar nodig. [file:3]</li>
+            <li>Rapportage &amp; overdracht: audit trail, reconstructie, kwaliteitscriteria en overdrachtsmomenten conform KCZI. [file:3]</li>
+          </ul>
+        </section>
+
+        <section id="welke-omgevingen-en-diensten">
+          <h3>Welke omgevingen en diensten kunnen een rol spelen?</h3>
+          <ul>
+            <li>SURF Research Drive (opslag en samenwerking). [file:3]</li>
+            <li>SURF SRAM (toegangsbeheer). [file:3]</li>
+            <li>SURF Research Cloud (SRC) (schaalbare onderzoeksomgevingen). [file:3]</li>
+            <li>Trusted Research Environment (TRE) bij verhoogde privacy-/security-eisen. [file:3]</li>
+          </ul>
+        </section>
+
+        <section id="zo-vraag-je-ondersteuning-aan">
+          <h3>Zo vraag je ondersteuning aan (minimale input)</h3>
+          <ol>
+            <li>Onderzoeksvraag + doel + beoogde output. [file:3]</li>
+            <li>Type data (bron, omvang, gevoeligheid). [file:3]</li>
+            <li>Beoogde methode/analyse (globaal). [file:3]</li>
+            <li>Planning (deadlines, subsidie, dataverzameling). [file:3]</li>
+            <li>Samenwerkingspartners (intern/extern) en gewenste toegang. [file:3]</li>
+          </ol>
+        </section>
+
+        <section id="uitkomst-van-de-intake">
+          <h3>Uitkomst van de intake</h3>
+          <p>
+            Uitkomst is een kort plan van aanpak: wat DataLab doet, wat jij doet, wie we betrekken, welke omgeving/tooling en welke documenten moeten worden vastgelegd. [file:3]
+          </p>
+        </section>
+      </section>
+
+      <section id="worksheet-bijlagen">
+        <h2>WORKSHEET BIJLAGES</h2>
+
+        <section id="bijlage-a-ds-stack">
+          <h3>A. De "DS-stack" in het kort</h3>
+          <p>
+            Een DataLab faciliteert een digitale workspace (hardware + software + afspraken) zodat data veilig en reproduceerbaar verwerkt kan worden; de DS-stack is daarbij een lagenmodel met eigen verantwoordelijkheden per laag. [file:3]
+          </p>
+          <ol>
+            <li><strong>Infrastructuur (compute &amp; storage)</strong>: lokaal/HPC/cloud; opslag, back-up, performance. [file:3]</li>
+            <li><strong>Toegang &amp; beveiliging</strong>: rollen/rechten, authenticatie (bijv. SRAM), logging/audit, dataclassificatie, maatregelen. [file:3]</li>
+            <li><strong>Data-laag</strong>: databronnen, intake, datakwaliteit, datasetversies, metadata. [file:3]</li>
+            <li><strong>Pipeline / verwerking</strong>: ETL/ELT, scripts, workflow, herhaalbare runs, monitoring. [file:3]</li>
+            <li><strong>Analyse / modellering</strong>: statistiek/ML, validatie, sensitiviteitsanalyses, reproduceerbaarheid. [file:3]</li>
+            <li><strong>Output, rapportage &amp; overdracht</strong>: rapporten, code/artefacts, documentatie, audit trail, archivering/publicatie. [file:3]</li>
+            <li><strong>Praktisch effect</strong>: het DataLab helpt keuzes per laag expliciet te maken en vast te leggen (protocol/analyseplan/DMP/SMP), zodat het onderzoek navolgbaar en overdraagbaar is. [file:3]</li>
+          </ol>
+        </section>
+
+        <section id="bijlage-b-inzetscenarios">
+          <h3>B. Typische inzetscenario's (keuzehulp)</h3>
+
+          <h3>1) Klein/medium, niet-gevoelig, beperkte rekenvraag</h3>
+          <ul>
+            <li>Werkplek lokaal + opslag/samenwerking via Research Drive. [file:3]</li>
+            <li>Focus: map-structuur, versiebeheer, documentatie, reproduceerbare scripts. [file:3]</li>
+          </ul>
+
+          <h3>2) Data-intensief en/of rekenintensief (PoC → opschaling)</h3>
+          <ul>
+            <li>Start met PoC in DataLab (DS-tools, evt. HPC). [file:3]</li>
+            <li>Daarna opschalen via SRC (schaalbare compute, gestandaardiseerde omgevingen). [file::3]</li>
+          </ul>
+
+          <h3>3) Gevoelige data / verhoogde eisen (privacy/security)</h3>
+          <ul>
+            <li>Werken in TRE of vergelijkbare beveiligde omgeving. [file:3]</li>
+            <li>Strikte toegangscontrole, logging, exportregels, minimale gegevensverwerking. [file:3]</li>
+            <li>Afstemming met privacy/security en datasteward is leidend. [file:3]</li>
+          </ul>
+        </section>
+
+        <section id="bijlage-c-doorverwijzing">
+          <h3>C. Doorverwijzing: wanneer en naar wie?</h3>
+          <p>Het DataLab verwijst door wanneer: [file:3]</p>
+          <ul>
+            <li>Formele toetsing/afstemming nodig is (AVG, DPIA, securityclassificatie). [file:3]</li>
+            <li>Specialistische methodologische/statistische expertise nodig is. [file:3]</li>
+            <li>Structurele ICT/IDT-inrichting of licenties nodig zijn. [file:3]</li>
+            <li>Engineeringwerk (productie-ETL, integraties, softwareontwikkeling) buiten scope valt. [file:3]</li>
+          </ul>
+
+          <p><strong>Voorbeelden van betrokken rollen:</strong> [file:3]</p>
+          <ul>
+            <li>(Senior) methodoloog/statisticus: onderzoeksdesign, power/steekproef, analysekader. [file:3]</li>
+            <li>Datasteward/RDM: DMP, archivering, metadata, FAIR, publiceren. [file:3]</li>
+            <li>ICT/IDT: accounts, tooling, licenties, integraties, beheer. [file:3]</li>
+            <li>Privacy/Security: DPIA, maatregelen, toegangsbeleid, TRE-voorwaarden. [file:3]</li>
+            <li>Domeinexpert: interpretatie, meetinstrumenten, contextvaliditeit. [file:3]</li>
+          </ul>
+        </section>
+
+        <section id="bijlage-d-standaard-output">
+          <h3>D. Standaard output (documentatie) die het DataLab helpt realiseren</h3>
+          <p>Afhankelijk van fase en project: [file:3]</p>
+          <ul>
+            <li>Onderzoeksprotocol (incl. meetmomenten, datastromen, kwaliteitscontroles). [file:3]</li>
+            <li>Analyseplan (variabelen, modellen, beslisregels, algoritmen). [file:3]</li>
+            <li>DMP (opslag, delen, bewaartermijnen, archivering/publicatie). [file:3]</li>
+            <li>SMP (tools, versies, licenties, omgeving, overdraagbaarheid). [file:3]</li>
+            <li>Audit-trail (back-logs, run-logs, versies van data/code). [file:3]</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="addendum-privacy">
+        <h2>Addendum: HR privacy (HINT) + Privacy-informatiepunt</h2>
+        <p>
+          Het document bevat een addendum met een verwijzing naar HINT (HR privacy) en een privacy-informatiepunt (PIP). [file:3]
+        </p>
+
+        <section id="privacy-informatiepunt">
+          <h3>Privacy-informatiepunt (PIP)</h3>
+          <p>
+            Voor privacyvragen: contactpersoon privacy, of het centrale PIP via privacy@hr.nl; daarnaast wordt de functionaris gegevensbescherming genoemd als contactoptie. [file:3]
+          </p>
+        </section>
+
+        <section id="welke-applicaties-zijn-veilig">
+          <h3>Welke applicaties zijn veilig binnen de hogeschool?</h3>
+          <p>
+            Het document geeft aan dat concernsystemen veilig zijn, en noemt voorwaarden zoals registratie in het verwerkingenregister, goedkeuring door FG en (bij persoonsgegevens) een verwerkersovereenkomst. [file:3]
+          </p>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <p>Gegenereerde index.html op basis van WAAROM_EEN_DATALAB_JAN_2026_V07.docx. [file:3]</p>
+    </div>
+  </footer>
+</body>
+</html>
