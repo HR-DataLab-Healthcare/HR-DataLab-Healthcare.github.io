@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Verkenning RDM Datalabs</title>
-  <meta name="description" content="Werkversie (16 april 2024). Verkenning van DataLabs/dataspaces en richtinggevende initiatieven in Nederland en Europa." />
+  <title>DataLab — wat is het en wat mag je verwachten?</title>
+  <meta name="description" content="Indexpagina met inhoudsopgave op basis van WAAROM_EEN_DATALAB_JAN_2026_V07.docx." />
 
   <style>
     :root{
-      --fg:#111;
-      --muted:#555;
-      --bg:#fff;
-      --card:#f7f7f8;
-      --border:#e5e7eb;
+      --fg:#0f172a;
+      --muted:#475569;
+      --bg:#ffffff;
+      --card:#f8fafc;
+      --border:#e2e8f0;
       --link:#0b57d0;
       --max: 980px;
     }
@@ -21,36 +21,32 @@
     body{
       margin:0;
       font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;
-      line-height:1.5;
+      line-height:1.55;
       color:var(--fg);
       background:var(--bg);
     }
     a{ color:var(--link); text-decoration:none; }
     a:hover{ text-decoration:underline; }
-
     header{
-      padding:2.5rem 1rem 1.5rem;
+      padding:2.25rem 1rem 1.25rem;
       border-bottom:1px solid var(--border);
-      background: linear-gradient(180deg, #fafafa, transparent);
+      background: linear-gradient(180deg, #f8fafc, transparent);
     }
     header .wrap, main, footer .wrap{
       max-width: var(--max);
       margin: 0 auto;
     }
-    h1{
-      font-size:1.9rem;
-      line-height:1.2;
-      margin:0 0 .5rem;
-    }
-    .lede{ color: var(--muted); max-width: 90ch; margin: .25rem 0 0; }
-    .meta{ color: var(--muted); font-size: .95rem; margin-top: .5rem; }
+    h1{ font-size:1.9rem; line-height:1.2; margin:0 0 .5rem; }
+    .lede{ color: var(--muted); max-width: 95ch; margin: .25rem 0 0; }
+    .meta{ color: var(--muted); font-size: .95rem; margin-top: .6rem; }
 
     main{ padding: 1.25rem 1rem 3rem; }
     h2{ font-size:1.25rem; margin:2rem 0 .5rem; }
     h3{ font-size:1.05rem; margin:1.25rem 0 .25rem; }
-    p{ margin:.25rem 0 .75rem; }
-    ul,ol{ margin:.25rem 0 .75rem; padding-left: 1.2rem; }
+    p{ margin:.25rem 0 .75rem; color: var(--fg); }
+    ul,ol{ margin:.25rem 0 .9rem; padding-left: 1.2rem; }
     li{ margin:.25rem 0; }
+    code{ font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
 
     .callout{
       background: var(--card);
@@ -59,15 +55,17 @@
       padding:1rem 1rem .75rem;
       margin:1rem 0 1.5rem;
     }
-    .callout h2{ margin-top:0; }
-
-    .toc ol{ margin:.25rem 0 .75rem; }
     .toc a{ display:inline-block; padding:.1rem 0; }
-    .toc .hint{ color:var(--muted); font-size:.95rem; margin-top:.25rem; }
+    .hint{ color:var(--muted); font-size:.95rem; margin:.25rem 0 .75rem; }
+    .table-wrap{ overflow:auto; border:1px solid var(--border); border-radius:12px; }
+    table{ width:100%; border-collapse:collapse; min-width: 780px; }
+    th, td{ padding:.6rem .75rem; border-bottom:1px solid var(--border); vertical-align:top; }
+    th{ text-align:left; background:#f1f5f9; font-weight:600; }
+    tr:last-child td{ border-bottom:none; }
 
     footer{
       border-top:1px solid var(--border);
-      padding:1.5rem 1rem;
+      padding:1.25rem 1rem;
       color:var(--muted);
       font-size:.95rem;
     }
@@ -77,401 +75,398 @@
 <body>
   <header>
     <div class="wrap">
-      <h1>Verkenning RDM Datalabs</h1>
+      <h1>DataLab — wat is het en wat mag je verwachten?</h1>
       <p class="lede">
-        Werkversie (16 april 2024). Verkenning van DataLabs/dataspaces en richtinggevende initiatieven in Nederland en Europa,
-        met een quick-scan analyse en positionering t.o.v. Europese en nationale (healthcare/geo-)informatie-infrastructuren en trust frameworks.
+        Deze pagina is uitsluitend opgebouwd uit de inhoud van <code>WAAROM_EEN_DATALAB_JAN_2026_V07.docx</code>.
       </p>
-      <p class="meta">Bronbasis: aangeleverde paste.txt</p>
+      <p class="meta">Versie: jan 2026 (V07).</p>
     </div>
   </header>
 
   <main>
     <nav class="callout toc" aria-label="Inhoudsopgave">
       <h2 id="inhoudsopgave">Inhoudsopgave</h2>
-      <p class="hint">Navigatie is afgestemd op de hoofdstukindeling uit de aangeleverde bron.</p>
-
+      <p class="hint">De koppen en secties hieronder volgen de structuur uit het document (incl. worksheet-onderdelen en bijlagen). [file:3]</p>
       <ol>
-        <li><a href="#inleiding">1. Inleiding</a>
+        <li><a href="#doel-en-positie">Doel en positie binnen de Hogeschool Rotterdam</a></li>
+        <li><a href="#wanneer-betrek-je-het-datalab">Wanneer betrek je het DataLab?</a></li>
+        <li><a href="#wat-levert-het-datalab-per-fase">Wat levert het DataLab per onderzoeksfase?</a></li>
+
+        <li><a href="#infrastructuur">Infrastructuur</a>
           <ol>
-            <li><a href="#aanleiding">1.1 Aanleiding</a></li>
-            <li><a href="#doel">1.2 Doel</a></li>
-            <li><a href="#aanpak">1.3 Aanpak</a></li>
-            <li><a href="#doelgroep">1.4 Doelgroep</a></li>
-            <li><a href="#leeswijzer">1.5 Leeswijzer</a></li>
+            <li><a href="#poc-en-prototyping">Proof-of-concept en prototyping</a></li>
+            <li><a href="#voorbereiding-op-surf">Voorbereiding op researchdiensten (SURF)</a></li>
+            <li><a href="#beveiligde-samenwerking-tre">Beveiligde samenwerking (TRE)</a></li>
           </ol>
         </li>
 
-        <li><a href="#initiatieven">2. DataLabs initiatieven beschouwd</a>
+        <li><a href="#hoe-werkt-een-datalab">Hoe werkt een DataLab (werkwijze en "DS-stack")?</a>
           <ol>
-            <li><a href="#initiatieven-inleiding">2.1 Inleiding</a></li>
-            <li><a href="#definities">2.2 DataLab definities</a></li>
-            <li><a href="#beschouwd">2.3 DataLab initiatieven beschouwd</a></li>
-            <li><a href="#quickscan">2.4 Opzet quick-scan analyse</a>
-              <ol>
-                <li><a href="#domein-typering">2.4.1 Domein en cross-domein typering</a></li>
-                <li><a href="#referentie-architectuur">2.4.2 Referentie architectuur</a></li>
-                <li><a href="#governance">2.4.3 Governance</a></li>
-                <li><a href="#interoperabiliteit">2.4.4 Interoperabiliteit</a></li>
-                <li><a href="#vertrouwen">2.4.5 Vertrouwen</a></li>
-                <li><a href="#datawaarde">2.4.6 Data waarde</a></li>
-                <li><a href="#technische-infra">2.4.7 Technische infrastructuur</a></li>
-              </ol>
-            </li>
+            <li><a href="#digitale-workspace">Digitale workspace als basis</a></li>
+            <li><a href="#ds-stack">De DS-stack: lagen met elk een eigen verantwoordelijkheid</a></li>
           </ol>
         </li>
 
-        <li><a href="#ids">3. International DataLab (Association)</a>
+        <li><a href="#wat-kun-je-praktisch-verwachten">Wat kun je praktisch verwachten (in het kort)</a></li>
+
+        <li><a href="#datalab-worksheet">DataLab WORKSHEET</a>
           <ol>
-            <li><a href="#ids-intro">3.1 International DataLab (Association)</a></li>
-            <li><a href="#ids-bouwstenen">3.2 IDS bouwstenen voor data delen</a></li>
-            <li><a href="#ids-ram">3.3 IDS referentie architectuur</a></li>
-            <li><a href="#ids-synthese">3.4 Synthese</a></li>
+            <li><a href="#wat-doen-we-en-wat-niet">Wat doen we (en wat niet)?</a></li>
+            <li><a href="#wanneer-schakel-je-in">Wanneer schakel je het DataLab in?</a></li>
+            <li><a href="#wat-per-fase-verwachten">Wat kun je per fase verwachten?</a></li>
+            <li><a href="#welke-omgevingen-en-diensten">Welke omgevingen en diensten kunnen een rol spelen?</a></li>
+            <li><a href="#zo-vraag-je-ondersteuning-aan">Zo vraag je ondersteuning aan (minimale input)</a></li>
+            <li><a href="#uitkomst-van-de-intake">Uitkomst van de intake</a></li>
           </ol>
         </li>
 
-        <li><a href="#gaiax">4. Gaia-X</a>
+        <li><a href="#worksheet-bijlagen">WORKSHEET BIJLAGES</a>
           <ol>
-            <li><a href="#gaiax-verbinder">4.1 Gaia-X als verbinder tussen ecosystemen</a></li>
-            <li><a href="#gaiax-actoren">4.2 Gaia-X actoren en federatieve diensten</a></li>
-            <li><a href="#gaiax-synthese">4.3 Synthese</a></li>
-            <li><a href="#gaiax-vs-ids">4.4 Gaia-X versus International DataLabs</a></li>
+            <li><a href="#bijlage-a-ds-stack">A. De "DS-stack" in het kort</a></li>
+            <li><a href="#bijlage-b-inzetscenarios">B. Typische inzetscenario's (keuzehulp)</a></li>
+            <li><a href="#bijlage-c-doorverwijzing">C. Doorverwijzing: wanneer en naar wie?</a></li>
+            <li><a href="#bijlage-d-standaard-output">D. Standaard output (documentatie) die het DataLab helpt realiseren</a></li>
           </ol>
         </li>
 
-        <li><a href="#opendei">5. OpenDEI</a>
+        <li><a href="#addendum-privacy">Addendum: HR privacy (HINT) + Privacy-informatiepunt</a>
           <ol>
-            <li><a href="#opendei-inleiding">5.1 Inleiding</a></li>
-            <li><a href="#opendei-principes">5.2 OpenDEI principes en bouwstenen</a></li>
-            <li><a href="#opendei-synthese">5.3 Synthese</a></li>
-          </ol>
-        </li>
-
-        <li><a href="#dsc">6. Data sharing coalition</a>
-          <ol>
-            <li><a href="#dsc-inleiding">6.1 Inleiding</a></li>
-            <li><a href="#dsc-canvas">6.2 Data sharing canvas</a></li>
-            <li><a href="#dsc-synthese">6.3 Synthese</a></li>
-          </ol>
-        </li>
-
-        <li><a href="#eu-infra">7. De Europese healthcare-informatie infrastructuur</a>
-          <ol>
-            <li><a href="#inspire">7.1 De Europese healthcare-informatie infrastructuur INSPIRE</a></li>
-            <li><a href="#inspire-synthese">7.2 Synthese INSPIRE</a></li>
-            <li><a href="#eu-strategie">7.3 De Europese data strategie en common DataLabs</a></li>
-          </ol>
-        </li>
-
-        <li><a href="#nl-infra">8. De Nationale healthcare-informatie infrastructuur</a>
-          <ol>
-            <li><a href="#ngii">8.1 De nationale healthcare-informatie infrastructuur</a></li>
-            <li><a href="#ngii-synthese">8.2 Synthese NGII</a></li>
-            <li><a href="#ngii-datafundament">8.3 Van NGII naar healthcare-datafundament?</a></li>
-          </ol>
-        </li>
-
-        <li><a href="#ishare">9. iSHARE</a>
-          <ol>
-            <li><a href="#ishare-inleiding">9.1 Inleiding</a></li>
-            <li><a href="#ishare-trust">9.2 iSHARE trust framework</a></li>
-            <li><a href="#ishare-synthese">9.3 Synthese</a></li>
-          </ol>
-        </li>
-
-        <li><a href="#referenties">A. Referenties</a>
-          <ol>
-            <li><a href="#normatieve-referenties">A.1 Normatieve referenties</a></li>
+            <li><a href="#privacy-informatiepunt">Privacy-informatiepunt (PIP)</a></li>
+            <li><a href="#welke-applicaties-zijn-veilig">Welke applicaties zijn veilig binnen de hogeschool?</a></li>
           </ol>
         </li>
       </ol>
     </nav>
 
-    <section id="inleiding">
-      <h2>1. Inleiding</h2>
+    <section id="doel-en-positie">
+      <h2>Doel en positie binnen de Hogeschool Rotterdam</h2>
+      <p>
+        Het KCZI DataLab ondersteunt onderzoekers en docenten bij methodologische en datagerelateerde vraagstukken, wanneer dit aantoonbaar bijdraagt aan kwaliteit, uitvoerbaarheid en verantwoording van praktijkgericht onderzoek. [file:3]
+      </p>
+      <p>
+        Het DataLab is geen alles-in-één uitvoeringsloket, maar fungeert als eerste aanspreekpunt (triage) en doorverwijzer. [file:3]
+      </p>
+      <ul>
+        <li><strong>Directe ondersteuning</strong>: bij scherpe onderzoeksvraag/doel/uitkomst en concrete methodologische of data-/softwarevragen. [file:3]</li>
+        <li><strong>Gerichte doorverwijzing</strong>: wanneer specialistische expertise of formele afstemming/besluitvorming nodig is (o.a. methodoloog/statisticus, datasteward/RDM, ICT/IDT, privacy/security, domeinexpertise of externe partijen). [file:3]</li>
+      </ul>
+    </section>
 
-      <section id="aanleiding">
-        <h3>1.1 Aanleiding</h3>
+    <section id="wanneer-betrek-je-het-datalab">
+      <h2>Wanneer betrek je het DataLab?</h2>
+      <p>
+        Bij voorkeur vroeg: in de voorfase (bijv. vóór subsidieaanvraag of vóórdat dataverzameling start). [file:3]
+      </p>
+      <p>
+        Vroege betrokkenheid helpt keuzes rond opzet, dataverzameling, analyse en data-/softwaremanagement tijdig te concretiseren en vast te leggen in o.a. onderzoeksprotocol, analyseplan, DMP en SMP. [file:3]
+      </p>
+      <p>
+        Dit sluit aan bij KCZI-werkwijze: systematisch werken per fase, toetsing/kwaliteitsborging en expliciete afspraken over datamanagement. [file:3]
+      </p>
+    </section>
+
+    <section id="wat-levert-het-datalab-per-fase">
+      <h2>Wat levert het DataLab per onderzoeksfase?</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Onderzoeksfase</th>
+              <th>Typische vraag</th>
+              <th>Wat levert het DataLab?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Voorfase (opzet)</strong></td>
+              <td>Keuze onderzoeksdesign, meetinstrumenten, steekproef, haalbaarheid, valorisatie</td>
+              <td>Intake; aanscherpen van onderzoeksvragen; meedenken over methodologische opties; zo nodig doorverwijzing naar (senior) methodologische/statistische expertise. [file:3]</td>
+            </tr>
+            <tr>
+              <td><strong>Verkenning / proof-of-concept (PoC)</strong></td>
+              <td>"Kunnen we de data-pipeline testen vóór we cloud inzetten?"</td>
+              <td>DS-tools en (waar beschikbaar) HPC; ondersteuning bij pipeline-ontwerp en testopzet; voorbereiding op passende inzet van SURF-diensten. [file:3]</td>
+            </tr>
+            <tr>
+              <td><strong>Dataverzameling</strong></td>
+              <td>Datastromen, datakwaliteit, workflow</td>
+              <td>Advies en praktische inrichting (workflow, kwaliteitscontroles, logging); zo nodig doorverwijzing naar tooling/training of domeinexpertise. [file:3]</td>
+            </tr>
+            <tr>
+              <td><strong>Data-analyse</strong></td>
+              <td>Opschonen, analysekeuzes, reproduceerbaarheid</td>
+              <td>Ondersteuning bij analyse-workflow, versiebeheer en documentatie; zo nodig doorverwijzing naar specialistische analyse-expertise. [file:3]</td>
+            </tr>
+            <tr>
+              <td><strong>Datamanagement (DMP)</strong></td>
+              <td>DMP, veilige opslag/delen, archivering, publiceren</td>
+              <td>Afstemming en ondersteuning bij DMP, opslag (o.a. HR Research Drive), projectmap-structuur, archivering en publicatie/metadata; zo nodig doorverwijzing naar datasteward/RDM-support. [file:3]</td>
+            </tr>
+            <tr>
+              <td><strong>Softwaremanagement (SMP)</strong></td>
+              <td>Toolkeuze, versies, licenties, overdraagbaarheid, reproduceerbaarheid</td>
+              <td>Advies over softwarekeuze en -beheer (versies/updates, licenties, documentatie, toegang/overdracht); koppeling aan reproduceerbare werkwijzen en gekozen (lokale/cloud) omgeving; zo nodig doorverwijzing naar IDT/ICT of gespecialiseerde DS-engineering. [file:3]</td>
+            </tr>
+            <tr>
+              <td><strong>Rapportage &amp; overdracht</strong></td>
+              <td>Navolgbaarheid, kwaliteitscontrole, overdraagbaarheid</td>
+              <td>Advies over vastlegging (audit trail, reconstructie), kwaliteitscriteria en overdrachtsmomenten conform KCZI. [file:3]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="infrastructuur">
+      <h2>Infrastructuur</h2>
+
+      <section id="poc-en-prototyping">
+        <h3>Proof-of-concept en prototyping</h3>
         <p>
-          De verkenning plaatst DataLabs in de context van de Europese digitale en data strategie en de ambitie om
-          “common EU DataLabs” te realiseren voor veilig, vertrouwd en soeverein datadelen binnen en over domeinen heen.
+          In de verkennende fase kan het DataLab faciliteiten bieden om een eerste data-pipeline te ontwerpen, prototypen en testen vóór opschaling of integratie (bij data-intensieve en/of rekenintensieve projecten). [file:3]
         </p>
+        <ul>
+          <li>Data Science tools. [file:3]</li>
+          <li>(Waar beschikbaar) HPC-workstations. [file:3]</li>
+        </ul>
+      </section>
+
+      <section id="voorbereiding-op-surf">
+        <h3>Voorbereiding op researchdiensten (SURF)</h3>
         <p>
-          Centrale vragen zijn: wat is een DataLab, wat typeert een DataLab, en hoe kan het concept worden toegepast
-          in relatie tot (nationale) healthcare/geo-informatie-infrastructuren.
+          Door randvoorwaarden vooraf uit te werken, kan inzet van cloud- en researchdiensten doelgericht en efficiënt plaatsvinden. [file:3]
+        </p>
+        <ul>
+          <li>SURF Research Drive (duurzame opslag en archivering, maakt federatief werken mogelijk). [file:3]</li>
+          <li>SURF Research Access Management (SRAM) (toegangsbeheer/toegangsportaal). [file:3]</li>
+          <li>SURF Research Cloud (SRC) (schaalbare onderzoeksomgevingen). [file:3]</li>
+        </ul>
+      </section>
+
+      <section id="beveiligde-samenwerking-tre">
+        <h3>Beveiligde samenwerking (TRE)</h3>
+        <p>
+          Waar nodig kan het DataLab (mee)werken in een Trusted Research Environment (TRE) om samenwerking te faciliteren, met aandacht voor privacy, informatiebeveiliging, toegangscontrole en auditability. [file:3]
+        </p>
+      </section>
+    </section>
+
+    <section id="hoe-werkt-een-datalab">
+      <h2>Hoe werkt een DataLab (werkwijze en "DS-stack")?</h2>
+
+      <section id="digitale-workspace">
+        <h3>Digitale workspace als basis</h3>
+        <p>
+          Om met data te werken is een digitale workspace nodig: een samenhangende set van infrastructuur en software waarmee data veilig kan worden opgeslagen, verwerkt, geanalyseerd en gedeeld. [file:3]
         </p>
       </section>
 
-      <section id="doel">
-        <h3>1.2 Doel</h3>
+      <section id="ds-stack">
+        <h3>De DS-stack: lagen met elk een eigen verantwoordelijkheid</h3>
+        <p>
+          De DS-stack is een lagenmodel op basis van separation of concerns (SoC): verantwoordelijkheden worden gescheiden om keuzes beheersbaar, overdraagbaar en reproduceerbaar te maken. [file:3]
+        </p>
         <ol>
-          <li>
-            Zicht geven op richtinggevende DataLab-initiatieven in Nederland en Europa en hun focusgebieden (concepten, actoren, bouwstenen en verbindingen).
-          </li>
-          <li>
-            Zicht krijgen op de positie van Europese en nationale (healthcare/geo-)informatie-infrastructuren t.o.v. deze initiatieven,
-            en welke aspecten binnen scope moeten vallen om optimaal bij te dragen aan de data-economie.
-          </li>
+          <li><strong>Infrastructuur laag (compute &amp; storage)</strong>: rekenvermogen (lokaal/HPC/cloud), opslag, back-up, netwerk. [file:3]</li>
+          <li><strong>Toegang &amp; beveiliging</strong>: accounts, rollen/rechten (bijv. SRAM), logging, dataclassificatie, veilige werkplek/TRE. [file:3]</li>
+          <li><strong>Data-laag</strong>: databronnen, data-inname, datakwaliteit, versiebeheer van datasets, metadata. [file:3]</li>
+          <li><strong>Verwerkings- en pipeline-laag</strong>: ETL/ELT, scripts/workflows, workflow management, reproduceerbare runs. [file:3]</li>
+          <li><strong>Analyse- en modelleerlaag</strong>: feature engineering, statistiek/ML, evaluatie, validatie. [file:3]</li>
+          <li><strong>Presentatie &amp; overdracht</strong>: rapportage, dashboards/outputs, documentatie, audit trail, overdraagbaarheid. [file:3]</li>
+        </ol>
+        <p>
+          Het DataLab helpt om keuzes per laag zichtbaar te maken en vast te leggen (protocol/analyseplan/DMP/SMP), zodat onderzoek navolgbaar, veilig en reproduceerbaar is. [file:3]
+        </p>
+      </section>
+    </section>
+
+    <section id="wat-kun-je-praktisch-verwachten">
+      <h2>Wat kun je praktisch verwachten (in het kort)</h2>
+      <ul>
+        <li>Intake en vraagverheldering: scope, doel, randvoorwaarden, planning, risico's. [file:3]</li>
+        <li>Concrete adviezen en inrichting: keuzes voor pipeline, tools, workflow, documentatie. [file:3]</li>
+        <li>Prototyping/PoC-ondersteuning: testen vóór opschaling naar cloud of integratie. [file:3]</li>
+        <li>Koppeling aan KCZI-kwaliteitseisen: checklist, vastlegging, evaluatiemomenten. [file:3]</li>
+        <li>Doorverwijzing en afstemming: als formele toetsing of specialistische expertise nodig is. [file:3]</li>
+      </ul>
+    </section>
+
+    <section id="datalab-worksheet">
+      <h2>DataLab WORKSHEET</h2>
+
+      <p>
+        Een DataLab is het eerste aanspreekpunt voor methodologische en data gerelateerde ondersteuning wanneer dit aantoonbaar bijdraagt aan kwaliteit, uitvoerbaarheid en verantwoording van praktijkgericht onderzoek. [file:3]
+      </p>
+
+      <section id="wat-doen-we-en-wat-niet">
+        <h3>Wat doen we (en wat niet)?</h3>
+
+        <p><strong>Het DataLab doet:</strong> [file:3]</p>
+        <ul>
+          <li>Intake &amp; vraagverheldering (scope, randvoorwaarden, risico's, planning). [file:3]</li>
+          <li>Methodologisch en data-/softwaregericht meedenken (opzet, datastromen, analyse-workflow, reproduceerbaarheid). [file:3]</li>
+          <li>Praktische ondersteuning bij pipeline-ontwerp en prototyping (waar passend). [file:3]</li>
+          <li>Advies en afstemming rond DMP/SMP, veilige opslag/delen en overdraagbaarheid. [file:3]</li>
+          <li>Doorverwijzen en coördineren richting juiste expertise (intern/extern) wanneer nodig. [file:3]</li>
+        </ul>
+
+        <p><strong>Het DataLab doet niet (standaard):</strong> [file:3]</p>
+        <ul>
+          <li>Structureel uitvoerend onderzoek overnemen (volledige analyse, langdurige dataverwerking). [file:3]</li>
+          <li>Formele goedkeuringen verstrekken (bijv. privacy/security-toetsing); wél begeleiden naar de juiste route. [file:3]</li>
+          <li>Maatwerk softwareontwikkeling zonder afstemming/mandaat (dan doorverwijzen of helpen specificeren). [file:3]</li>
+        </ul>
+      </section>
+
+      <section id="wanneer-schakel-je-in">
+        <h3>Wanneer schakel je het DataLab in?</h3>
+        <p>
+          Bij voorkeur vroeg, in de voorfase (bijv. vóór een subsidieaanvraag of vóórdat dataverzameling start), zodat ontwerpkeuzes tijdig kunnen worden vastgelegd in onderzoeksprotocol, analyseplan, DMP en SMP. [file:3]
+        </p>
+      </section>
+
+      <section id="wat-per-fase-verwachten">
+        <h3>Wat kun je per fase verwachten?</h3>
+        <ul>
+          <li>Voorfase (opzet): intake, aanscherpen onderzoeksvraag/doel, methodologische opties, haalbaarheid/steekproef, valorisatie; zo nodig doorverwijzing naar senior methodoloog/statisticus. [file:3]</li>
+          <li>Verkenning/Proof-of-concept: tooling en (waar beschikbaar) HPC-workstations; pipeline-ontwerp en testopzet; voorbereiding op SURF-diensten. [file:3]</li>
+          <li>Dataverzameling: advies over datastromen, datakwaliteit, workflow en logging; zo nodig doorverwijzing naar tooling/training/domeinexpertise. [file:3]</li>
+          <li>Analyse: ondersteuning bij reproduceerbare analyse-workflow, versiebeheer en documentatie; zo nodig specialistische analyse-expertise. [file:3]</li>
+          <li>Datamanagement (DMP): veilige opslag/delen, map-structuur, archivering en publiceren; afstemming met datasteward/RDM-support. [file:3]</li>
+          <li>Softwaremanagement (SMP): toolkeuze, versies, licenties, overdraagbaarheid; afstemming met ICT/IDT waar nodig. [file:3]</li>
+          <li>Rapportage &amp; overdracht: audit trail, reconstructie, kwaliteitscriteria en overdrachtsmomenten conform KCZI. [file:3]</li>
+        </ul>
+      </section>
+
+      <section id="welke-omgevingen-en-diensten">
+        <h3>Welke omgevingen en diensten kunnen een rol spelen?</h3>
+        <ul>
+          <li>SURF Research Drive (opslag en samenwerking). [file:3]</li>
+          <li>SURF SRAM (toegangsbeheer). [file:3]</li>
+          <li>SURF Research Cloud (SRC) (schaalbare onderzoeksomgevingen). [file:3]</li>
+          <li>Trusted Research Environment (TRE) bij verhoogde privacy-/security-eisen. [file:3]</li>
+        </ul>
+      </section>
+
+      <section id="zo-vraag-je-ondersteuning-aan">
+        <h3>Zo vraag je ondersteuning aan (minimale input)</h3>
+        <ol>
+          <li>Onderzoeksvraag + doel + beoogde output. [file:3]</li>
+          <li>Type data (bron, omvang, gevoeligheid). [file:3]</li>
+          <li>Beoogde methode/analyse (globaal). [file:3]</li>
+          <li>Planning (deadlines, subsidie, dataverzameling). [file:3]</li>
+          <li>Samenwerkingspartners (intern/extern) en gewenste toegang. [file:3]</li>
         </ol>
       </section>
 
-      <section id="aanpak">
-        <h3>1.3 Aanpak</h3>
+      <section id="uitkomst-van-de-intake">
+        <h3>Uitkomst van de intake</h3>
         <p>
-          De verkenning is uitgevoerd aan de hand van deskresearch, waarbij bronnen van DataLab-initiatieven zijn geraadpleegd
-          en gebruikt als input voor een quick-scan analyse van onderdelen en focusgebieden.
-        </p>
-      </section>
-
-      <section id="doelgroep">
-        <h3>1.4 Doelgroep</h3>
-        <p>
-          De tekst richt zich op iedereen die betrokken is bij het uitwisselen van healthcare/geo-informatie en het toepassen van standaarden:
-          informatiemanagers, stuurgroepleden, beleidsmedewerkers, projectleiders, adviseurs, architecten, IT-leveranciers en implementatoren.
-        </p>
-      </section>
-
-      <section id="leeswijzer">
-        <h3>1.5 Leeswijzer</h3>
-        <p>
-          Hoofdstuk 2 geeft achtergrondinformatie en het quick-scan kader, hoofdstuk 3 behandelt IDSA/IDS,
-          hoofdstuk 4 Gaia-X, hoofdstuk 5 OpenDEI, hoofdstuk 6 Data Sharing Coalition,
-          hoofdstuk 7 en 8 Europese en nationale infrastructuren, en hoofdstuk 9 iSHARE als vertrouwenskader.
+          Uitkomst is een kort plan van aanpak: wat DataLab doet, wat jij doet, wie we betrekken, welke omgeving/tooling en welke documenten moeten worden vastgelegd. [file:3]
         </p>
       </section>
     </section>
 
-    <section id="initiatieven">
-      <h2>2. DataLabs initiatieven beschouwd</h2>
+    <section id="worksheet-bijlagen">
+      <h2>WORKSHEET BIJLAGES</h2>
 
-      <section id="initiatieven-inleiding">
-        <h3>2.1 Inleiding</h3>
+      <section id="bijlage-a-ds-stack">
+        <h3>A. De "DS-stack" in het kort</h3>
         <p>
-          DataLabs worden in de context van de Europese data strategie benaderd als middel om datawaardeketens te stimuleren,
-          met randvoorwaarden rond soevereiniteit, betrouwbaarheid, veiligheid en duidelijke regels voor toegang en gebruik.
+          Een DataLab faciliteert een digitale workspace (hardware + software + afspraken) zodat data veilig en reproduceerbaar verwerkt kan worden; de DS-stack is daarbij een lagenmodel met eigen verantwoordelijkheden per laag. [file:3]
         </p>
+        <ol>
+          <li><strong>Infrastructuur (compute &amp; storage)</strong>: lokaal/HPC/cloud; opslag, back-up, performance. [file:3]</li>
+          <li><strong>Toegang &amp; beveiliging</strong>: rollen/rechten, authenticatie (bijv. SRAM), logging/audit, dataclassificatie, maatregelen. [file:3]</li>
+          <li><strong>Data-laag</strong>: databronnen, intake, datakwaliteit, datasetversies, metadata. [file:3]</li>
+          <li><strong>Pipeline / verwerking</strong>: ETL/ELT, scripts, workflow, herhaalbare runs, monitoring. [file:3]</li>
+          <li><strong>Analyse / modellering</strong>: statistiek/ML, validatie, sensitiviteitsanalyses, reproduceerbaarheid. [file:3]</li>
+          <li><strong>Output, rapportage &amp; overdracht</strong>: rapporten, code/artefacts, documentatie, audit trail, archivering/publicatie. [file:3]</li>
+          <li><strong>Praktisch effect</strong>: het DataLab helpt keuzes per laag expliciet te maken en vast te leggen (protocol/analyseplan/DMP/SMP), zodat het onderzoek navolgbaar en overdraagbaar is. [file:3]</li>
+        </ol>
       </section>
 
-      <section id="definities">
-        <h3>2.2 DataLab definities</h3>
-        <p>
-          In de bron worden meerdere synoniemen genoemd (data-ecosysteem, datadeelsysteem, datafederatie, federatief datastelsel).
-          De verkenning kiest “DataLab” als werkterm en benadrukt het gedeelde kernidee: federatief/gedistribueerd datadelen op basis van afspraken en besturing.
-        </p>
+      <section id="bijlage-b-inzetscenarios">
+        <h3>B. Typische inzetscenario's (keuzehulp)</h3>
+        <h3>1) Klein/medium, niet-gevoelig, beperkte rekenvraag</h3>
+        <ul>
+          <li>Werkplek lokaal + opslag/samenwerking via Research Drive. [file:3]</li>
+          <li>Focus: map-structuur, versiebeheer, documentatie, reproduceerbare scripts. [file:3]</li>
+        </ul>
+
+        <h3>2) Data-intensief en/of rekenintensief (PoC → opschaling)</h3>
+        <ul>
+          <li>Start met PoC in DataLab (DS-tools, evt. HPC). [file:3]</li>
+          <li>Daarna opschalen via SRC (schaalbare compute, gestandaardiseerde omgevingen). [file:3]</li>
+        </ul>
+
+        <h3>3) Gevoelige data / verhoogde eisen (privacy/security)</h3>
+        <ul>
+          <li>Werken in TRE of vergelijkbare beveiligde omgeving. [file:3]</li>
+          <li>Strikte toegangscontrole, logging, exportregels, minimale gegevensverwerking. [file:3]</li>
+          <li>Afstemming met privacy/security en datasteward is leidend. [file:3]</li>
+        </ul>
       </section>
 
-      <section id="beschouwd">
-        <h3>2.3 DataLab initiatieven beschouwd</h3>
-        <p>
-          Beschouwde initiatieven zijn: International DataLabs Association (IDSA/IDS), Gaia-X, OpenDEI, Data Sharing Coalition,
-          de Europese infrastructuur INSPIRE, de nationale infrastructuur NGII en iSHARE.
-        </p>
+      <section id="bijlage-c-doorverwijzing">
+        <h3>C. Doorverwijzing: wanneer en naar wie?</h3>
+        <p>Het DataLab verwijst door wanneer: [file:3]</p>
+        <ul>
+          <li>Formele toetsing/afstemming nodig is (AVG, DPIA, securityclassificatie). [file:3]</li>
+          <li>Specialistische methodologische/statistische expertise nodig is. [file:3]</li>
+          <li>Structurele ICT/IDT-inrichting of licenties nodig zijn. [file:3]</li>
+          <li>Engineeringwerk (productie-ETL, integraties, softwareontwikkeling) buiten scope valt. [file:3]</li>
+        </ul>
+
+        <p><strong>Voorbeelden van betrokken rollen:</strong> [file:3]</p>
+        <ul>
+          <li>(Senior) methodoloog/statisticus: onderzoeksdesign, power/steekproef, analysekader. [file:3]</li>
+          <li>Datasteward/RDM: DMP, archivering, metadata, FAIR, publiceren. [file:3]</li>
+          <li>ICT/IDT: accounts, tooling, licenties, integraties, beheer. [file:3]</li>
+          <li>Privacy/Security: DPIA, maatregelen, toegangsbeleid, TRE-voorwaarden. [file:3]</li>
+          <li>Domeinexpert: interpretatie, meetinstrumenten, contextvaliditeit. [file:3]</li>
+        </ul>
       </section>
 
-      <section id="quickscan">
-        <h3>2.4 Opzet quick-scan analyse</h3>
-        <p>
-          De quick-scan gebruikt het OpenDEI-bouwstenenmodel (governance, interoperabiliteit, vertrouwen, datawaarde),
-          aangevuld met o.a. use cases/value cases/community building en technische infrastructuur.
-        </p>
-
-        <section id="domein-typering">
-          <h3>2.4.1 Domein en cross-domein typering</h3>
-          <p>
-            Domeinen worden getypeerd o.a. langs de (in de EU data strategie onderscheiden) sectoren, waarbij initiatieven domeinspecifiek kunnen zijn
-            of juist cross-domein (domein-overstijgend) functioneren.
-          </p>
-        </section>
-
-        <section id="referentie-architectuur">
-          <h3>2.4.2 Referentie architectuur</h3>
-          <p>
-            Verschillende initiatieven hanteren een referentiearchitectuur (bijv. Design Principles/OpenDEI, Data Sharing Canvas/DSC,
-            Reference Architecture Model/IDSA, Architecture/Gaia‑X), meestal “hoog-over” met functionele samenhang, actoren/rollen en bouwstenen.
-          </p>
-        </section>
-
-        <section id="governance">
-          <h3>2.4.3 Governance</h3>
-          <p>
-            Governance omvat actoren en besturing, waardebepaling, juridische/operationele overeenkomsten en community building,
-            en start doorgaans vanuit zinvolle use cases en (optioneel) business/value cases.
-          </p>
-        </section>
-
-        <section id="interoperabiliteit">
-          <h3>2.4.4 Interoperabiliteit</h3>
-          <p>
-            Interoperabiliteit betreft afspraken rond datamodellen/formaten, data-uitwissel-API’s, herkomst/traceerbaarheid en metadata (zelfbeschrijvingen),
-            inclusief vindmechanismen via (federatieve) catalogi.
-          </p>
-        </section>
-
-        <section id="vertrouwen">
-          <h3>2.4.5 Vertrouwen</h3>
-          <p>
-            Vertrouwen (trust framework) omvat o.a. identity management, toegangs- en gebruikscontrole, en “trusted exchange” (zekerheid over deelnemers en naleving),
-            soms ondersteund door certificering/attestering.
-          </p>
-        </section>
-
-        <section id="datawaarde">
-          <h3>2.4.6 Data waarde</h3>
-          <p>
-            Datawaarde wordt zichtbaar via bouwstenen zoals catalogus (vindbaarheid), clearinghouse (transactielogging/afwikkeling),
-            vocabularies (semantiek) en marktplaats/app store (vraag-aanbod, contracten, toegang).
-          </p>
-        </section>
-
-        <section id="technische-infra">
-          <h3>2.4.7 Technische infrastructuur</h3>
-          <p>
-            De “harde” infrastructuur (compute, storage, netwerk, cloud/edge) wordt vaak aan infrastructuurproviders/markt overgelaten,
-            terwijl initiatieven zich richten op afspraken, standaarden en (federatieve) componenten.
-          </p>
-        </section>
+      <section id="bijlage-d-standaard-output">
+        <h3>D. Standaard output (documentatie) die het DataLab helpt realiseren</h3>
+        <p>Afhankelijk van fase en project: [file:3]</p>
+        <ul>
+          <li>Onderzoeksprotocol (incl. meetmomenten, datastromen, kwaliteitscontroles). [file:3]</li>
+          <li>Analyseplan (variabelen, modellen, beslisregels, algoritmen). [file:3]</li>
+          <li>DMP (opslag, delen, bewaartermijnen, archivering/publicatie). [file:3]</li>
+          <li>SMP (tools, versies, licenties, omgeving, overdraagbaarheid). [file:3]</li>
+          <li>Audit-trail (back-logs, run-logs, versies van data/code). [file:3]</li>
+        </ul>
       </section>
     </section>
 
-    <section id="ids">
-      <h2>3. International DataLab (Association)</h2>
+    <section id="addendum-privacy">
+      <h2>Addendum: HR privacy (HINT) + Privacy-informatiepunt</h2>
+      <p>
+        Addendum bevat een verwijzing naar “Hogeschool - Rechten en plichten - Privacy - Veel gestelde vragen en tips - Iedereen | HINT”. [file:3]
+      </p>
 
-      <section id="ids-intro">
-        <h3>3.1 International DataLab (Association)</h3>
+      <section id="privacy-informatiepunt">
+        <h3>Privacy-informatiepunt (PIP)</h3>
         <p>
-          De International DataLabs Association (IDSA) positioneert International DataLabs (IDS) als veilig, soeverein systeem voor datadelen,
-          waarbij datasoevereiniteit (zelfbepaalde controle over gebruik) bij dataproviders blijft.
+          Voor vragen of twijfels over privacy binnen de hogeschool: bespreek dit met de contactpersoon privacy, of neem contact op met het centrale privacy-informatiepunt (PIP) via privacy@hr.nl; daarnaast wordt een functionaris gegevensbescherming genoemd als contactoptie. [file:3]
         </p>
       </section>
 
-      <section id="ids-bouwstenen">
-        <h3>3.2 IDS bouwstenen voor data delen</h3>
+      <section id="welke-applicaties-zijn-veilig">
+        <h3>Welke applicaties zijn veilig binnen de hogeschool?</h3>
         <p>
-          IDS beschrijft bouwstenen/rollen zoals dataprovider en dataconsument via connectors, publicatie/vindbaarheid via (metadata) broker,
-          semantische ondersteuning via vocabulary hub/providers, transactieregistratie via clearinghouse en uitvoering van data-apps via app stores.
-        </p>
-      </section>
-
-      <section id="ids-ram">
-        <h3>3.3 IDS referentie architectuur</h3>
-        <p>
-          De IDS Reference Architecture Model (RAM) beschrijft de samenhang in lagen (business, functioneel, proces, informatie en systeem),
-          met aanvullende perspectieven zoals security, certificering en governance.
-        </p>
-      </section>
-
-      <section id="ids-synthese">
-        <h3>3.4 Synthese</h3>
-        <p>
-          IDS fungeert als kader om DataLabs te ontwerpen en implementeren, met nadruk op connectoren/metadata discovery en afspraken voor vertrouwen en datasoevereiniteit,
-          terwijl domeinspecifieke semantiek en governance vaak bij de DataLab-gemeenschap zelf liggen.
+          Het document stelt dat applicaties veilig zijn als ze door Hogeschool Rotterdam worden aangeboden (concernsystemen) en noemt daarnaast vijf voorwaarden (o.a. verwerkingenregister, goedkeuring FG, verwerkersovereenkomst, vrijwillige deelname). [file:3]
         </p>
       </section>
     </section>
+  </main>
 
-    <section id="gaiax">
-      <h2>4. Gaia-X</h2>
-
-      <section id="gaiax-verbinder">
-        <h3>4.1 Gaia-X als verbinder tussen ecosystemen</h3>
-        <p>
-          Gaia‑X wordt beschreven als Europees initiatief dat een raamwerk voor controle en governance ontwikkelt, toepasbaar bovenop bestaande cloud/edge stacks,
-          met doelen rond datasoevereiniteit, beschikbaarheid van data en innovatie.
-        </p>
-      </section>
-
-      <section id="gaiax-actoren">
-        <h3>4.2 Gaia-X actoren en federatieve diensten</h3>
-        <p>
-          Gaia‑X kent rollen zoals providers, consumers en federators, waarbij federatieve diensten de verbindingen en basisfunctionaliteit leveren
-          voor interoperabiliteit en vertrouwen in ecosystemen.
-        </p>
-      </section>
-
-      <section id="gaiax-synthese">
-        <h3>4.3 Synthese</h3>
-        <p>
-          In de verkenning wordt Gaia‑X gepositioneerd als standaard/architectuur die data-uitwisseling in en tussen DataLabs faciliteert,
-          met nadruk op policy-, governance- en interoperabiliteitsmechanismen.
-        </p>
-      </section>
-
-      <section id="gaiax-vs-ids">
-        <h3>4.4 Gaia-X versus International DataLabs</h3>
-        <p>
-          Gaia‑X en IDS worden als nauw verwant beschreven: beide richten zich op federatief datadelen en vertrouwen,
-          waarbij afstemming/harmonisatie tussen initiatieven expliciet een rol speelt.
-        </p>
-      </section>
-    </section>
-
-    <section id="opendei">
-      <h2>5. OpenDEI</h2>
-
-      <section id="opendei-inleiding">
-        <h3>5.1 Inleiding</h3>
-        <p>
-          OpenDEI levert een bouwstenenmodel om DataLabs te duiden en is in deze verkenning gebruikt als leidraad voor de quick-scan.
-        </p>
-      </section>
-
-      <section id="opendei-principes">
-        <h3>5.2 OpenDEI principes en bouwstenen</h3>
-        <p>
-          Het OpenDEI-model werkt met bouwstenen gegroepeerd in governance, interoperabiliteit, vertrouwen en datawaarde,
-          waarbij data-soevereiniteit en trust (identity, trusted exchange, access &amp; usage control/policies) als integraal worden gezien.
-        </p>
-      </section>
-
-      <section id="opendei-synthese">
-        <h3>5.3 Synthese</h3>
-        <p>
-          In de bron wordt een trust framework beschreven als structuur waarmee organisaties veilig en betrouwbaar online zaken kunnen doen,
-          en iSHARE wordt expliciet in die categorie gepositioneerd t.o.v. OpenDEI.
-        </p>
-      </section>
-    </section>
-
-    <section id="dsc">
-      <h2>6. Data sharing coalition</h2>
-
-      <section id="dsc-inleiding">
-        <h3>6.1 Inleiding</h3>
-        <p>
-          Data Sharing Coalition (DSC) wordt gepositioneerd als initiatief met cross-domein focus, met aandacht voor referentie-architectuur en praktische handreikingen.
-        </p>
-      </section>
-
-      <section id="dsc-canvas">
-        <h3>6.2 Data sharing canvas</h3>
-        <p>
-          Het Data Sharing Canvas biedt een globaal overzicht van onderwerpen voor datadelen, en wordt via o.a. blueprint/implementation guides
-          vertaald naar ontwerpkeuzes en implementatie-inzichten (rollen, componenten, interactiemodel).
-        </p>
-      </section>
-
-      <section id="dsc-synthese">
-        <h3>6.3 Synthese</h3>
-        <p>
-          DSC richt zich sterk op use cases en value cases; implementatieguides sluiten aan op open standaarden en leunen conceptueel op IDSA-actoren/rollen
-          en iSHARE-achtige trust-elementen (bijv. machine-to-machine authenticatie en OAuth-flows).
-        </p>
-      </section>
-    </section>
-
-    <section id="eu-infra">
-      <h2>7. De Europese healthcare-informatie infrastructuur</h2>
-
-      <section id="inspire">
-        <h3>7.1 De Europese healthcare-informatie infrastructuur INSPIRE</h3>
-        <p>
-          INSPIRE wordt beschreven als (minder bekend, maar geïmplementeerd) DataLab-achtig stelsel, waarin lidstaten datasets gestandaardiseerd beschikbaar maken
-          via discovery/view/download services en metadata-catalogi.
-        </p>
-      </section>
-
-      <section id="inspire-synthese">
-        <h3>7.2 Synthese INSPIRE</h3>
-        <p>
-          INSPIRE bestaat uit uitgebreide formele afspraken (wetgevend en technisch), standaarden voor interoperabiliteit, metadata, uitvoeringsregels voor services
-          en conformiteitstoetsing, ondersteund door (Europese/nationale) registers en portals.
+  <footer>
+    <div class="wrap">
+      <p>Gegenereerde index.html op basis van WAAROM_EEN_DATALAB_JAN_2026_V07.docx. [file:3]</p>
+    </div>
+  </footer>
+</body>
+</html>
