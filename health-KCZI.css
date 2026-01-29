@@ -1,9 +1,8 @@
 /* health-KCZI.css
- * KCZI/Healthcare skin that works from the same directory as index.html
- * (No @import to local base.css; relies on ReSpec's own CSS.)
+ * KCZI layout overrides to be used alongside Geonovum ReSpec output.
  */
 
-/* subtle background watermark as before */
+/* watermark (optioneel) */
 body {
   background-image: url("https://tools.geostandaarden.nl/respec/style/logos/GN-CV.svg");
   background-repeat: no-repeat;
@@ -11,7 +10,6 @@ body {
   background-size: 180px auto;
 }
 
-/* ===== 2-koloms layout (TOC links, content rechts) ===== */
 :root{
   --gap: 18px;
   --page-max: 2200px;
@@ -19,6 +17,7 @@ body {
   --toc-ideal: 22vw;
 }
 
+/* 2 columns: TOC left, content right */
 .page-wrap{
   width: min(100%, var(--page-max));
   margin: 0 auto;
@@ -30,7 +29,6 @@ body {
   align-items: start;
 }
 
-/* TOC */
 nav#toc{
   position: sticky;
   top: 12px;
@@ -40,17 +38,15 @@ nav#toc{
   border: 1px solid #ddd;
   border-radius: 10px;
   background: #fff;
-
   padding: 12px 12px 8px 12px;
 }
 
-/* Content container */
 .content-col{
   min-width: 0;
   width: 100%;
 }
 
-/* ===== Force wide content (override ReSpec/base constraints) ===== */
+/* Forceer brede content (Geonovum/Logius themes kunnen max-width zetten) */
 .page-wrap .content-col,
 .page-wrap .content-col *{
   max-width: none !important;
@@ -62,24 +58,8 @@ nav#toc{
   margin-right: 0 !important;
 }
 
-/* Common wrappers some themes use */
-.page-wrap .content-col main,
-.page-wrap .content-col article,
-.page-wrap .content-col section,
-.page-wrap .content-col .section,
-.page-wrap .content-col #respecDocument,
-.page-wrap .content-col .respec-main,
-.page-wrap .content-col .wrapper,
-.page-wrap .content-col .container{
-  width: 100% !important;
-}
-
 /* Mobile: stack */
 @media (max-width: 980px){
   .page-wrap{ grid-template-columns: 1fr; }
-  nav#toc{
-    position: relative;
-    top: auto;
-    max-height: none;
-  }
+  nav#toc{ position: relative; top: auto; max-height: none; }
 }
