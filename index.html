@@ -4,135 +4,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">
   <meta name="generator" content="ReSpec 24.5.2">
-  <style>
-    /* --- EXAMPLES --- */
-    span.example-title { text-transform: none; }
-    aside.example, div.example, div.illegal-example {
-      padding: 0.5em; margin: 1em 0; position: relative; clear: both;
-    }
-    div.illegal-example { color: red }
-    div.illegal-example p { color: black }
-    aside.example, div.example {
-      padding: .5em; border-left-width: .5em; border-left-style: solid;
-      border-color: #e0cb52; background: #fcfaee;
-    }
-    aside.example div.example { border-left-width: .1em; border-color: #999; background: #fff; }
-    aside.example div.example span.example-title { color: #999; }
-  </style>
 
   <title>Waarom een DataLab? (KCZI)</title>
+
   <script src="respec/builds/respec-healthcare novum.js"></script>
-
-  <style id="respec-mainstyle">
-/*****************************************************************
- * ReSpec 3 CSS
- * Robin Berjon - http://berjon.com/
- *****************************************************************/
-
-/* Override code highlighter background */
-.hljs { background: transparent !important; }
-
-/* --- INLINES --- */
-h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr { border: none; }
-dfn { font-weight: bold; }
-a.internalDFN { color: inherit; border-bottom: 1px solid #99c; text-decoration: none; }
-a.externalDFN { color: inherit; border-bottom: 1px dotted #ccc; text-decoration: none; }
-a.bibref { text-decoration: none; }
-#references :target { background: #eaf3ff; }
-cite .bibref { font-style: normal; }
-code { color: #c83500; }
-th code { color: inherit; }
-
-/* --- TOC --- */
-.toc a, .tof a { text-decoration: none; }
-a .secno, a .figno { color: #000; }
-ul.tof, ol.tof { list-style: none outside none; }
-.caption { margin-top: 0.5em; font-style: italic; }
-
-/* --- TABLE --- */
-table.simple {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border-bottom: 3px solid #005a9c;
-}
-.simple th { background: #005a9c; color: #fff; padding: 3px 5px; text-align: left; }
-.simple th[scope="row"] { background: inherit; color: inherit; border-top: 1px solid #ddd; }
-.simple td { padding: 3px 10px; border-top: 1px solid #ddd; }
-.simple tr:nth-child(even) { background: #f0f6ff; }
-
-/* --- DL --- */
-.section dd>p:first-child { margin-top: 0; }
-.section dd>p:last-child { margin-bottom: 0; }
-.section dd { margin-bottom: 1em; }
-.section dl.attrs dd, .section dl.eldef dd { margin-bottom: 0; }
-
-#issue-summary>ul, .respec-dfn-list { column-count: 2; }
-#issue-summary li, .respec-dfn-list li { list-style: none; }
-
-details.respec-tests-details { margin-left: 1em; display: inline-block; vertical-align: top; }
-details.respec-tests-details>* { padding-right: 2em; }
-details.respec-tests-details[open] {
-  z-index: 999999; position: absolute; border: thin solid #cad3e2;
-  border-radius: 0.3em; background-color: white; padding-bottom: 0.5em;
-}
-details.respec-tests-details[open]>summary {
-  border-bottom: thin solid #cad3e2; padding-left: 1em; margin-bottom: 1em; line-height: 2em;
-}
-details.respec-tests-details>ul { width: 100%; margin-top: -0.3em; }
-details.respec-tests-details>li { padding-left: 1em; }
-
-a[href].self-link:hover { opacity: 1; text-decoration: none; background-color: transparent; }
-h2, h3, h4, h5, h6 { position: relative; }
-aside.example .marker > a.self-link { color: inherit; }
-
-h2>a.self-link, h3>a.self-link, h4>a.self-link, h5>a.self-link, h6>a.self-link {
-  border: none; color: inherit; font-size: 83%;
-  height: 2em; left: -1.6em; opacity: .5;
-  position: absolute; text-align: center; text-decoration: none;
-  top: 0; transition: opacity .2s; width: 2em;
-}
-h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.self-link::before, h6>a.self-link::before {
-  content: "§"; display: block;
-}
-
-@media (max-width: 767px) {
-  dd { margin-left: 0; }
-  h2>a.self-link, h3>a.self-link, h4>a.self-link, h5>a.self-link, h6>a.self-link { left: auto; top: auto; }
-}
-@media print { .removeOnSave { display: none; } }
-  </style>
-
   <link rel="stylesheet" href="respec/style/GN-WV.css">
   <link rel="shortcut icon" type="image/x-icon" href="respec/style/logos/healthcare novum.ico">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <script id="initialUserConfig" type="application/json">{}</script>
-
-  <!-- Minimal layout override: TOC links naast content -->
+  <!-- Layout override: dynamisch meeschalen met window (TOC links, content rechts) -->
   <style>
-    /* ReSpec gebruikt vaak #toc en content in flow; dit dwingt een 2-koloms layout af */
-    body.h-entry { margin: 0; }
-    .page-wrap{
-      display: grid;
-      grid-template-columns: 240px 1fr; /* TOC smaller => content breder */
-      gap: 18px;
+    :root{
+      --gap: 18px;
+
+      /* TOC schaalt mee: min 240px, ideal 22vw, max 360px */
+      --toc-min: 240px;
+      --toc-ideal: 22vw;
+      --toc-max: 360px;
+
+      /* Content maximale leesbreedte: groeit mee, maar niet oneindig breed */
+      --content-max: 1200px;
+      --page-max: 1800px;
     }
+
+    /* Full-width container die meeschalen met scherm */
+    .page-wrap{
+      width: min(100%, var(--page-max));
+      margin: 0 auto;
+      padding: 0 16px 40px 16px;
+
+      display: grid;
+      grid-template-columns: minmax(var(--toc-min), var(--toc-ideal)) minmax(0, 1fr);
+      gap: var(--gap);
+      align-items: start;
+    }
+
+    /* TOC sticky en scrollbaar */
     nav#toc{
       position: sticky;
       top: 12px;
       max-height: calc(100vh - 24px);
       overflow: auto;
+
       border: 1px solid #ddd;
       border-radius: 10px;
       background: #fff;
       padding: 12px 12px 8px 12px;
     }
-    .content-col{ min-width: 0; }
+
+    /* Content kolom: vult ruimte, maar cap leesbreedte */
+    .content-col{
+      min-width: 0;
+      max-width: var(--content-max);
+      width: 100%;
+    }
+
+    /* Als je wil dat content écht full width binnen de kolom wordt, zet max-width uit:
+       .content-col{ max-width: none; } */
+
+    /* Mobiel: TOC boven content */
     @media (max-width: 980px){
-      .page-wrap{ grid-template-columns: 240px 1fr; /* TOC smaller => content breder */
-      gap: 18px; }
-      nav#toc{ position: relative; top:auto; max-height: none; }
+      .page-wrap{
+        grid-template-columns: 1fr;
+      }
+      nav#toc{
+        position: relative;
+        top: auto;
+        max-height: none;
+      }
+      .content-col{
+        max-width: none;
+      }
     }
   </style>
+
+  <script id="initialUserConfig" type="application/json">{}</script>
 </head>
 
 <body class="h-entry">
@@ -142,6 +88,7 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
     </a>
     <h1 class="title p-name" id="title">Waarom een DataLab?</h1>
     <h2>KCZI DataLab<br></h2>
+
     <dl>
       <dt>Deze versie:</dt>
       <dd><a class="u-url" href="https://hr-datalab-healthcare.github.io/">https://hr-datalab-healthcare.github.io/</a></dd>
@@ -170,8 +117,6 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
 
     <hr title="Separator for header">
   </div>
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <div class="page-wrap">
     <!-- TOC links -->
@@ -212,7 +157,7 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
           </p>
           <ul>
             <li><strong>Directe ondersteuning</strong>: wanneer de onderzoeksvraag, het doel en de beoogde onderzoeksuitkomst voldoende scherp zijn geformuleerd en er concrete methodologische of data-/softwarevragen liggen. [file:4]</li>
-            <li><strong>Gerichte doorverwijzing</strong>: wanneer specialistische expertise, formele afstemming of besluitvorming nodig is (o.a. (senior) methodoloog/statisticus, datasteward/RDM-support, ICT/IDT, privacy/security, domeinexpertise of externe leveranciers/partners). [file:4]</li>
+            <li><strong>Gerichte doorverwijzing</strong>: wanneer specialistische expertise, formele afstemming of besluitvorming nodig is (o.a. (senior) methodoloog/statisticus, datasteward / RDM-support, ICT/IDT, privacy/security, domeinexpertise of externe leveranciers/partners). [file:4]</li>
           </ul>
         </section>
 
@@ -295,19 +240,15 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
           </ul>
 
           <h4 id="voorbereiding-op-surf">Voorbereiding op researchdiensten (SURF)</h4>
-          <p>
-            Door randvoorwaarden vooraf uit te werken, kan inzet van cloud- en researchdiensten doelgericht en efficiënt plaatsvinden, zoals SURF Research Drive, SRAM en SRC. [file:4]
-          </p>
           <ul>
             <li><strong>SURF Research Drive</strong> (duurzame opslag en archivering, maakt federatief werken mogelijk). [file:4]</li>
-            <li><strong>SURF Research Access Management (SRAM)</strong> (toegangsbeheer/toegangsportaal). [file:4]</li>
-            <li><strong>SURF Research Cloud (SRC)</strong> (schaalbare onderzoeksomgevingen). [file:4]</li>
+            <li><strong>SURF Research Access Management -- SRAM</strong> (toegangsbeheer/toegangsportaal). [file:4]</li>
+            <li><strong>SURF Research Cloud -- SRC</strong> (schaalbare onderzoeksomgevingen). [file:4]</li>
           </ul>
 
           <h4 id="beveiligde-samenwerking-tre">Beveiligde samenwerking (TRE)</h4>
           <p>
-            Waar nodig kan het DataLab (mee)werken in een <strong>Trusted Research Environment (TRE)</strong> om samenwerking te faciliteren, met aandacht voor privacy (AVG), informatiebeveiliging,
-            toegangscontrole en auditability. [file:4]
+            Waar nodig kan het DataLab (mee)werken in een <strong>Trusted Research Environment (TRE)</strong>, met aandacht voor privacy (AVG), informatiebeveiliging, toegangscontrole en auditability. [file:4]
           </p>
         </section>
 
@@ -322,8 +263,7 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
 
           <h4 id="ds-stack">De DS-stack: lagen met elk een eigen verantwoordelijkheid</h4>
           <p>
-            DataLabs gebruiken vaak het concept van de <strong>Data Science stack (DS-stack)</strong>, gebaseerd op separation of concerns (SoC): verantwoordelijkheden scheiden in lagen zodat keuzes beheersbaar,
-            overdraagbaar en reproduceerbaar worden. [file:4]
+            DataLabs gebruiken vaak het concept van de <strong>Data Science stack (DS-stack)</strong>, gebaseerd op separation of concerns (SoC). [file:4]
           </p>
           <ol>
             <li><strong>Infrastructuur laag (compute &amp; storage)</strong>: rekenvermogen (lokaal/HPC/cloud), opslag, back-up, netwerk. [file:4]</li>
@@ -334,7 +274,7 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
             <li><strong>Presentatie &amp; overdracht</strong>: rapportage, dashboards/outputs, documentatie, audit trail, overdraagbaarheid. [file:4]</li>
           </ol>
           <p>
-            Het DataLab helpt expliciet om keuzes per laag zichtbaar te maken en vast te leggen (protocol/analyseplan/DMP/SMP), zodat het onderzoek navolgbaar, veilig en reproduceerbaar is. [file:4]
+            Het DataLab helpt keuzes per laag zichtbaar te maken en vast te leggen (protocol/analyseplan/DMP/SMP), zodat het onderzoek navolgbaar, veilig en reproduceerbaar is. [file:4]
           </p>
         </section>
 
@@ -376,13 +316,13 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
 
           <h4 id="worksheet-wanneer-inschakelen">Wanneer schakel je het DataLab in?</h4>
           <p>
-            Bij voorkeur vroeg, in de voorfase, zodat ontwerpkeuzes tijdig worden vastgelegd in onderzoeksprotocol, analyseplan, DMP en SMP. [file:4]
+            Bij voorkeur vroeg, in de voorfase (bijv. vóór een subsidieaanvraag of vóórdat dataverzameling start). [file:4]
           </p>
 
           <h4 id="worksheet-per-fase">Wat kun je per fase verwachten?</h4>
           <ul>
             <li><strong>Voorfase (opzet)</strong>: intake, aanscherpen onderzoeksvraag/doel, methodologische opties, haalbaarheid/steekproef, valorisatie; zo nodig doorverwijzing naar senior methodoloog/statisticus. [file:4]</li>
-            <li><strong>Verkenning/Proof-of-concept</strong>: tooling en (waar beschikbaar) HPC-workstations; pipeline-ontwerp en testopzet; voorbereiding op SURF-diensten. [file:4]</li>
+            <li><strong>Verkenning/ Proof-of-concept</strong>: tooling en (waar beschikbaar) HPC-workstations; pipeline-ontwerp en testopzet; voorbereiding op SURF-diensten. [file:4]</li>
             <li><strong>Dataverzameling</strong>: advies over datastromen, datakwaliteit, workflow en logging; zo nodig doorverwijzing naar tooling/training/domeinexpertise. [file:4]</li>
             <li><strong>Analyse</strong>: ondersteuning bij reproduceerbare analyse-workflow, versiebeheer en documentatie; zo nodig specialistische analyse-expertise. [file:4]</li>
             <li><strong>Datamanagement (DMP)</strong>: veilige opslag/delen, map-structuur, archivering en publiceren; afstemming met datasteward/RDM-support. [file:4]</li>
@@ -409,7 +349,7 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
 
           <h4 id="worksheet-uitkomst">Uitkomst van de intake</h4>
           <p>
-            Uitkomst van de intake is een kort plan van aanpak (wat DataLab doet, wat jij doet, wie we betrekken, welke omgeving/tooling, en welke documenten moeten worden vastgelegd). [file:4]
+            Uitkomst van de intake: een kort plan van aanpak (wat DataLab doet, wat jij doet, wie we betrekken, welke omgeving/tooling, en welke documenten moeten worden vastgelegd). [file:4]
           </p>
         </section>
 
@@ -418,7 +358,7 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
 
           <h4 id="bijlage-a">A. De "DS-stack" in het kort</h4>
           <p>
-            Een DataLab faciliteert een digitale workspace (hardware + software + afspraken) zodat data veilig en reproduceerbaar verwerkt kan worden; de DS-stack is een lagenmodel waarbij elke laag een eigen verantwoordelijkheid heeft. [file:4]
+            Een DataLab faciliteert een digitale workspace: een samenhang van hardware + software + afspraken, zodat data veilig en reproduceerbaar verwerkt kan worden; de DS-stack is een lagenmodel met eigen verantwoordelijkheden per laag. [file:4]
           </p>
           <ol>
             <li><strong>Infrastructuur (compute &amp; storage)</strong>: lokaal/HPC/cloud; opslag, back-up, performance. [file:4]</li>
@@ -427,11 +367,10 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
             <li><strong>Pipeline / verwerking</strong>: ETL/ELT, scripts, workflow, herhaalbare runs, monitoring. [file:4]</li>
             <li><strong>Analyse / modellering</strong>: statistiek/ML, validatie, sensitiviteitsanalyses, reproduceerbaarheid. [file:4]</li>
             <li><strong>Output, rapportage &amp; overdracht</strong>: rapporten, code/artefacts, documentatie, audit trail, archivering/publicatie. [file:4]</li>
-            <li><strong>Praktisch effect</strong>: keuzes per laag expliciet maken en vastleggen (protocol/analyseplan/DMP/SMP) zodat onderzoek navolgbaar en overdraagbaar is. [file:4]</li>
+            <li><strong>Praktisch effect</strong>: het DataLab helpt keuzes per laag expliciet te maken en vast te leggen (protocol/analyseplan/DMP/SMP), zodat het onderzoek navolgbaar en overdraagbaar is. [file:4]</li>
           </ol>
 
           <h4 id="bijlage-b">B. Typische inzetscenario's (keuzehulp)</h4>
-
           <p><strong>1) Klein/medium, niet-gevoelig, beperkte rekenvraag</strong> [file:4]</p>
           <ul>
             <li>Werkplek lokaal + opslag/samenwerking via Research Drive. [file:4]</li>
@@ -484,20 +423,22 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
           <h3 id="addendum"><span class="secno">1.9 </span> Addendum (privacy)</h3>
 
           <p>
-            Addendum bevat een verwijzing naar HR privacy-informatie via HINT. [file:4]
+            Addendum: <a href="https://hint.hr.nl/nl/HR/Over-de-HR/Rechten-en-plichten/privacy/veel-gestelde-vragen2/iedereen/">Hogeschool - Rechten en plichten - Privacy - Veel gestelde vragen en tips - Iedereen | HINT</a>. [file:4]
           </p>
 
           <h4 id="pip">Privacy-informatiepunt (PIP)</h4>
           <p>
-            Voor vragen of twijfels over privacy binnen de hogeschool: neem contact op met de contactpersoon privacy of het centrale privacy-informatiepunt (PIP) via privacy@hr.nl; daarnaast wordt de functionaris gegevensbescherming genoemd als contactoptie. [file:4]
+            Bespreek privacyvragen met de contactpersoon privacy; je kunt ook terecht bij het centrale privacy-informatiepunt (PIP) via <a href="mailto:privacy@hr.nl">privacy@hr.nl</a>;
+            als derde optie wordt de functionaris gegevensbescherming genoemd. [file:4]
           </p>
 
           <h4 id="veilige-applicaties">Welke applicaties zijn veilig binnen de hogeschool?</h4>
           <p>
-            Veilig zijn in ieder geval de applicaties die door Hogeschool Rotterdam zelf worden aangeboden (concernsystemen). [file:4]
+            Veilig zijn in ieder geval de applicaties die door Hogeschool Rotterdam zelf worden aangeboden, de concernsystemen. [file:4]
           </p>
           <p>
-            Systemen zijn ook veilig als ze voldoen aan voorwaarden zoals melding in het verwerkingenregister, goedkeuring door de Functionaris Gegevensbescherming en (bij verwerking van persoonsgegevens) een verwerkersovereenkomst. [file:4]
+            Systemen zijn ook veilig als ze voldoen aan voorwaarden zoals melding in het verwerkingenregister, goedkeuring door de Functionaris Gegevensbescherming
+            en (bij verwerking van persoonsgegevens) een overeenkomst met de verwerker. [file:4]
           </p>
         </section>
 
@@ -505,6 +446,5 @@ h2>a.self-link::before, h3>a.self-link::before, h4>a.self-link::before, h5>a.sel
 
     </div>
   </div>
-
 </body>
 </html>
