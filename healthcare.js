@@ -1,7 +1,7 @@
 // healthcare.js
 (function () {
   const GEONOVUM_RESPEC =
-    "https://tools.geostandaarden.nl/respec/vergelijk/logius/respec-geonovum.js"; // [web:42]
+    "https://tools.geostandaarden.nl/respec/vergelijk/logius/respec-geonovum.js";
 
   function loadScript(src) {
     return new Promise((resolve, reject) => {
@@ -16,11 +16,10 @@
   }
 
   async function boot() {
-    // MUST exist before loading ReSpec. [attached_file:1]
+    // must exist before loading respec
     window.respecConfig = window.respecConfig || {};
     await loadScript(GEONOVUM_RESPEC);
   }
 
   boot().catch(console.error);
 })();
-
